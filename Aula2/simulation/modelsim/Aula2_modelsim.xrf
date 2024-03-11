@@ -1,0 +1,7 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/Aula2/Aula2.bdf
+source_file = 1, C:/altera/13.0sp1/quartus/bin64/output_files/Waveform.vwf
+source_file = 1, C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/Aula2/db/Aula2.cbx.xml
+design_name = Aula2
+instance = comp, \pin_name1~I , pin_name1, Aula2, 1
+instance = comp, \pin_name2~I , pin_name2, Aula2, 1
