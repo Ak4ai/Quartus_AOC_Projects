@@ -1,0 +1,157 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Henrique\Documents\GitHub\Quartus_AOC_Projects\simulation\qsim
+vdecoder2to4
+Z1 !s100 `0a_DSmi9=PETeW=;SRT>0
+Z2 I^R>o;l^HB8T0NhAYb>kR>1
+Z3 V4H0N9fVRllehb_En59iIh1
+Z4 dC:\Users\Henrique\Documents\GitHub\Quartus_AOC_Projects\mic1\simulation\qsim
+Z5 w1710437953
+Z6 8mic1.vo
+Z7 Fmic1.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|mic1.vo|
+Z10 o-work work -O0
+Z11 !s108 1710437953.883000
+Z12 !s107 mic1.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoder2to4_vlg_check_tst
+Z13 !s100 CJjULdL2c`I6hiadaU5:21
+Z14 I]d_`m8d?9iZ2OL0_a]n?31
+Z15 VUh8Ro^6?`g]<^AWle8^3c1
+R4
+Z16 w1710437952
+Z17 8mic1.vt
+Z18 Fmic1.vt
+L0 59
+R8
+r1
+31
+Z19 !s108 1710437953.986000
+Z20 !s107 mic1.vt|
+Z21 !s90 -work|work|mic1.vt|
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoder2to4_vlg_sample_tst
+Z22 !s100 <i:5hHHKE:`T<lZi]2eGC1
+Z23 I7VU2FP`fPUiUUD65dnd^70
+Z24 Vgz]QFAH>g<;:Mb3FUHdZG2
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+31
+R19
+R20
+R21
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoder2to4_vlg_vec_tst
+Z25 !s100 EPQVo@<m7h0ce@AZYleaO1
+Z26 Ij]Bzz6Jn>T6U5U?Ln9fQN2
+Z27 V5DLz^?7@JMeOU<JhkAL7_0
+R4
+R16
+R17
+R18
+Z28 L0 235
+R8
+r1
+31
+R19
+R20
+R21
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoder3to8
+Z29 I?iT6<<[hP;oVOldU:]@=>3
+Z30 VAZ83FiK;GOb>S_PTh[5F51
+R4
+Z31 w1710438104
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+!i10b 1
+Z32 !s100 Bg>2Bo:XBIDCGeBDO:MCW3
+!s85 0
+Z33 !s108 1710438105.237000
+R12
+!s101 -O0
+vdecoder3to8_vlg_check_tst
+!i10b 1
+!s100 3@biQ5d2<QI8:`h`]IJZn1
+IG^@2Gc[D8VHkP[AZa6hLV2
+Z34 VJ?oXWbK^M8Zb9O;:[>>I=2
+R4
+Z35 w1710438103
+R17
+R18
+L0 61
+R8
+r1
+!s85 0
+31
+Z36 !s108 1710438105.329000
+Z37 !s107 mic1.vt|
+R21
+!s101 -O0
+R10
+vdecoder3to8_vlg_sample_tst
+!i10b 1
+Z38 !s100 bbPQ2]<[fC4<2zQ@kN[]11
+Z39 Ih<N0mo<?FF^U@=D9bDTkM1
+Z40 V127ZnVdn6c45eZgeIcTIO3
+R4
+R35
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R36
+R37
+R21
+!s101 -O0
+R10
+vdecoder3to8_vlg_vec_tst
+!i10b 1
+!s100 ^;g=Q=4j^>IRnnAz^nV=@2
+I:Rj]=1KjOFFX3VPSVZUIL3
+Z41 Vn@Q]_YP^IUVP^jdUF4Egi0
+R4
+R35
+R17
+R18
+L0 345
+R8
+r1
+!s85 0
+31
+R36
+R37
+R21
+!s101 -O0
+R10
