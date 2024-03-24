@@ -355,8 +355,9 @@ TRANSITION_LIST("decoder3to8_vlg_vec_tst|s0")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 875.0;
-		LEVEL 0 FOR 125.0;
+		LEVEL X FOR 4.532;
+		LEVEL 1 FOR 875.989;
+		LEVEL 0 FOR 119.479;
 	}
 }
 
@@ -365,9 +366,10 @@ TRANSITION_LIST("decoder3to8_vlg_vec_tst|s1")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 125.0;
-		LEVEL 1 FOR 125.0;
-		LEVEL 0 FOR 750.0;
+		LEVEL X FOR 4.245;
+		LEVEL 0 FOR 125.989;
+		LEVEL 1 FOR 125.106;
+		LEVEL 0 FOR 744.66;
 	}
 }
 
@@ -376,9 +378,10 @@ TRANSITION_LIST("decoder3to8_vlg_vec_tst|s2")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 250.0;
+		LEVEL X FOR 4.403;
+		LEVEL 0 FOR 250.86;
 		LEVEL 1 FOR 125.0;
-		LEVEL 0 FOR 625.0;
+		LEVEL 0 FOR 619.737;
 	}
 }
 
@@ -387,9 +390,10 @@ TRANSITION_LIST("decoder3to8_vlg_vec_tst|s3")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 375.0;
-		LEVEL 1 FOR 125.0;
-		LEVEL 0 FOR 500.0;
+		LEVEL X FOR 3.956;
+		LEVEL 0 FOR 375.989;
+		LEVEL 1 FOR 125.118;
+		LEVEL 0 FOR 494.937;
 	}
 }
 
@@ -398,9 +402,10 @@ TRANSITION_LIST("decoder3to8_vlg_vec_tst|s4")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 500.0;
-		LEVEL 1 FOR 125.0;
-		LEVEL 0 FOR 375.0;
+		LEVEL X FOR 4.688;
+		LEVEL 0 FOR 500.989;
+		LEVEL 1 FOR 124.726;
+		LEVEL 0 FOR 369.597;
 	}
 }
 
@@ -409,9 +414,10 @@ TRANSITION_LIST("decoder3to8_vlg_vec_tst|s5")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 625.0;
-		LEVEL 1 FOR 125.0;
-		LEVEL 0 FOR 250.0;
+		LEVEL X FOR 4.422;
+		LEVEL 0 FOR 625.989;
+		LEVEL 1 FOR 125.116;
+		LEVEL 0 FOR 244.473;
 	}
 }
 
@@ -420,9 +426,10 @@ TRANSITION_LIST("decoder3to8_vlg_vec_tst|s6")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 750.0;
+		LEVEL X FOR 4.079;
+		LEVEL 0 FOR 750.865;
 		LEVEL 1 FOR 125.0;
-		LEVEL 0 FOR 125.0;
+		LEVEL 0 FOR 120.056;
 	}
 }
 
@@ -431,8 +438,9 @@ TRANSITION_LIST("decoder3to8_vlg_vec_tst|s7")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 875.0;
-		LEVEL 1 FOR 125.0;
+		LEVEL X FOR 4.52;
+		LEVEL 0 FOR 875.989;
+		LEVEL 1 FOR 119.491;
 	}
 }
 
@@ -511,8 +519,8 @@ TRANSITION_LIST("decoder3to8_vlg_vec_tst|i1|a~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 500.0;
-		LEVEL 1 FOR 500.0;
+		LEVEL 0 FOR 500.989;
+		LEVEL 1 FOR 499.011;
 	}
 }
 
@@ -521,10 +529,10 @@ TRANSITION_LIST("decoder3to8_vlg_vec_tst|i1|b~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 250.0;
+		LEVEL 0 FOR 250.979;
 		LEVEL 1 FOR 250.0;
 		LEVEL 0 FOR 250.0;
-		LEVEL 1 FOR 250.0;
+		LEVEL 1 FOR 249.021;
 	}
 }
 
@@ -533,14 +541,14 @@ TRANSITION_LIST("decoder3to8_vlg_vec_tst|i1|c~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 125.0;
+		LEVEL 0 FOR 125.989;
 		LEVEL 1 FOR 125.0;
 		LEVEL 0 FOR 125.0;
 		LEVEL 1 FOR 125.0;
 		LEVEL 0 FOR 125.0;
 		LEVEL 1 FOR 125.0;
 		LEVEL 0 FOR 125.0;
-		LEVEL 1 FOR 125.0;
+		LEVEL 1 FOR 124.011;
 	}
 }
 
@@ -549,8 +557,9 @@ TRANSITION_LIST("decoder3to8_vlg_vec_tst|i1|inst~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 875.0;
-		LEVEL 1 FOR 125.0;
+		LEVEL X FOR 0.844;
+		LEVEL 0 FOR 875.989;
+		LEVEL 1 FOR 123.167;
 	}
 }
 
@@ -559,9 +568,10 @@ TRANSITION_LIST("decoder3to8_vlg_vec_tst|i1|inst~1_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 125.0;
-		LEVEL 1 FOR 125.0;
-		LEVEL 0 FOR 750.0;
+		LEVEL X FOR 0.847;
+		LEVEL 0 FOR 125.989;
+		LEVEL 1 FOR 125.106;
+		LEVEL 0 FOR 748.058;
 	}
 }
 
@@ -570,9 +580,10 @@ TRANSITION_LIST("decoder3to8_vlg_vec_tst|i1|inst~2_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 250.0;
+		LEVEL X FOR 0.971;
+		LEVEL 0 FOR 250.86;
 		LEVEL 1 FOR 125.0;
-		LEVEL 0 FOR 625.0;
+		LEVEL 0 FOR 623.169;
 	}
 }
 
@@ -581,9 +592,10 @@ TRANSITION_LIST("decoder3to8_vlg_vec_tst|i1|inst~3_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 375.0;
-		LEVEL 1 FOR 125.0;
-		LEVEL 0 FOR 500.0;
+		LEVEL X FOR 0.842;
+		LEVEL 0 FOR 375.989;
+		LEVEL 1 FOR 125.118;
+		LEVEL 0 FOR 498.051;
 	}
 }
 
@@ -592,9 +604,10 @@ TRANSITION_LIST("decoder3to8_vlg_vec_tst|i1|inst~4_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 500.0;
-		LEVEL 1 FOR 125.0;
-		LEVEL 0 FOR 375.0;
+		LEVEL X FOR 1.117;
+		LEVEL 0 FOR 500.989;
+		LEVEL 1 FOR 124.726;
+		LEVEL 0 FOR 373.168;
 	}
 }
 
@@ -603,9 +616,10 @@ TRANSITION_LIST("decoder3to8_vlg_vec_tst|i1|inst~5_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 625.0;
-		LEVEL 1 FOR 125.0;
-		LEVEL 0 FOR 250.0;
+		LEVEL X FOR 0.843;
+		LEVEL 0 FOR 625.989;
+		LEVEL 1 FOR 125.116;
+		LEVEL 0 FOR 248.052;
 	}
 }
 
@@ -614,9 +628,10 @@ TRANSITION_LIST("decoder3to8_vlg_vec_tst|i1|inst~6_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 750.0;
+		LEVEL X FOR 0.968;
+		LEVEL 0 FOR 750.865;
 		LEVEL 1 FOR 125.0;
-		LEVEL 0 FOR 125.0;
+		LEVEL 0 FOR 123.167;
 	}
 }
 

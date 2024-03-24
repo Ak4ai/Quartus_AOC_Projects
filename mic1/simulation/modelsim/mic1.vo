@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 32-bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "03/14/2024 14:41:44"
+// DATE "03/22/2024 16:25:03"
 
 // 
 // Device: Altera EP2C5T144C6 Package TQFP144
@@ -77,6 +77,10 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("mic1_v.sdo");
+// synopsys translate_on
+
 wire \a~combout ;
 wire \b~combout ;
 wire \c~combout ;
