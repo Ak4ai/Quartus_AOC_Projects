@@ -72,6 +72,16 @@ SIGNAL("EntradaB")
 	PARENT = "";
 }
 
+SIGNAL("EntradaC")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 SIGNAL("SUM")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -84,7 +94,7 @@ SIGNAL("SUM")
 
 GROUP("Entradas")
 {
-	MEMBERS = "CIN", "EntradaA", "EntradaB";
+	MEMBERS = "CIN", "EntradaA", "EntradaB", "EntradaC";
 }
 
 TRANSITION_LIST("CIN")
@@ -110,7 +120,12 @@ TRANSITION_LIST("EntradaA")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		NODE
+		{
+			REPEAT = 1;
+			LEVEL 0 FOR 500.0;
+			LEVEL 1 FOR 500.0;
+		}
 	}
 }
 
@@ -121,10 +136,19 @@ TRANSITION_LIST("EntradaB")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 1;
-			LEVEL 0 FOR 500.0;
-			LEVEL 1 FOR 500.0;
+			REPEAT = 2;
+			LEVEL 0 FOR 250.0;
+			LEVEL 1 FOR 250.0;
 		}
+	}
+}
+
+TRANSITION_LIST("EntradaC")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -140,11 +164,11 @@ TRANSITION_LIST("SUM")
 DISPLAY_LINE
 {
 	CHANNEL = "Entradas";
-	EXPAND_STATUS = COLLAPSED;
+	EXPAND_STATUS = EXPANDED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
-	CHILDREN = 1, 2, 3;
+	CHILDREN = 1, 2, 3, 4;
 }
 
 DISPLAY_LINE
@@ -179,10 +203,20 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "COUT";
+	CHANNEL = "EntradaC";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
+	TREE_LEVEL = 1;
+	PARENT = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "COUT";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 5;
 	TREE_LEVEL = 0;
 }
 
@@ -191,7 +225,7 @@ DISPLAY_LINE
 	CHANNEL = "SUM";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 5;
+	TREE_INDEX = 6;
 	TREE_LEVEL = 0;
 }
 

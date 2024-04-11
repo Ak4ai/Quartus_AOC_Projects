@@ -80,10 +80,11 @@ R10
 !s85 0
 !s101 -O0
 vdecoder3to8
-Z29 I@oz:G;CjUFPTDb6@eH3OC2
-Z30 VAZ83FiK;GOb>S_PTh[5F51
+Z29 !s100 G4:f4KIFMWh;F6>VdeQIC0
+Z30 I@oz:G;CjUFPTDb6@eH3OC2
+Z31 VAZ83FiK;GOb>S_PTh[5F51
 R4
-Z31 w1711135503
+Z32 w1712344529
 R6
 R7
 L0 31
@@ -92,14 +93,12 @@ r1
 31
 R9
 R10
-!i10b 1
-Z32 !s100 G4:f4KIFMWh;F6>VdeQIC0
-!s85 0
-Z33 !s108 1711135504.461000
+Z33 !s108 1712344530.348000
 R12
+!i10b 1
+!s85 0
 !s101 -O0
 vdecoder3to8_vlg_check_tst
-!i10b 1
 Z34 !s100 3@biQ5d2<QI8:`h`]IJZn1
 Z35 IG^@2Gc[D8VHkP[AZa6hLV2
 Z36 VJ?oXWbK^M8Zb9O;:[>>I=2
@@ -110,18 +109,18 @@ R18
 L0 61
 R8
 r1
-!s85 0
 31
 Z38 !s108 1711135504.575000
-Z39 !s107 mic1.vt|
+R20
 R21
-!s101 -O0
 R10
-vdecoder3to8_vlg_sample_tst
 !i10b 1
-Z40 !s100 bbPQ2]<[fC4<2zQ@kN[]11
-Z41 Ih<N0mo<?FF^U@=D9bDTkM1
-Z42 V127ZnVdn6c45eZgeIcTIO3
+!s85 0
+!s101 -O0
+vdecoder3to8_vlg_sample_tst
+Z39 !s100 bbPQ2]<[fC4<2zQ@kN[]11
+Z40 Ih<N0mo<?FF^U@=D9bDTkM1
+Z41 V127ZnVdn6c45eZgeIcTIO3
 R4
 R37
 R17
@@ -129,38 +128,38 @@ R18
 L0 29
 R8
 r1
-!s85 0
 31
 R38
-R39
+R20
 R21
-!s101 -O0
 R10
-vdecoder3to8_vlg_vec_tst
 !i10b 1
-Z43 !s100 ^;g=Q=4j^>IRnnAz^nV=@2
-Z44 I:Rj]=1KjOFFX3VPSVZUIL3
-Z45 Vn@Q]_YP^IUVP^jdUF4Egi0
+!s85 0
+!s101 -O0
+vdecoder3to8_vlg_vec_tst
+Z42 !s100 >jA`nd3`aYo2`3k]W:mOz0
+Z43 I3;I4g<I@[UIZD2RQ5d;W]2
+Z44 Vn@Q]_YP^IUVP^jdUF4Egi0
 R4
-R37
+Z45 w1712344528
 R17
 R18
-Z46 L0 345
+L0 29
 R8
 r1
-!s85 0
 31
-R38
-R39
 R21
-!s101 -O0
 R10
+Z46 !s108 1712344530.457000
+R20
+!i10b 1
+!s85 0
+!s101 -O0
 vFullAdder_1bit
-Z47 !s100 gAdaD1`;l_;^C?@D`8:gG2
-Z48 I^<gVnPac:3@B^kh[IUjzT3
-Z49 V7;Q3EFWcmNd7GEc?5ocin2
+Z47 IR>[hPXJKW9Z4d>CXdjMfn0
+Z48 VhEGVaz>hedIBdFXXKm`c`3
 R4
-Z50 w1711135407
+Z49 w1712348354
 R6
 R7
 L0 31
@@ -169,25 +168,26 @@ r1
 31
 R9
 R10
-Z51 n@full@adder_1bit
-Z52 !s108 1711135407.905000
+Z50 n@full@adder_1bit
+Z51 !s100 Ra;`ZFDj3GQg29L;K6?A:0
+Z52 !s108 1712348355.009000
 R12
 !i10b 1
 !s85 0
 !s101 -O0
 vFullAdder_1bit_vlg_check_tst
-Z53 !s100 3Ve98J1N1j7;_7JmPT7Ff0
-Z54 IjMP4W42R9?`RmfhEMEJ9R3
+Z53 !s100 0Z6`WXHJI6GW?gfbc@UkO3
+Z54 I_eXJCbN<UEhfeGSkFkjRn3
 Z55 VNOFMIiYQ6IaheEN??ef>C0
 R4
-Z56 w1711135406
+Z56 w1712348353
 R17
 R18
-L0 61
+L0 63
 R8
 r1
 31
-Z57 !s108 1711135408.015000
+Z57 !s108 1712348355.121000
 R20
 R21
 R10
@@ -196,9 +196,9 @@ Z58 n@full@adder_1bit_vlg_check_tst
 !s85 0
 !s101 -O0
 vFullAdder_1bit_vlg_sample_tst
-Z59 !s100 MboXbL6005EF54H_@16a23
-Z60 I6Q8<@D]=jE>FKRe_WEOHZ3
-Z61 V9G@flUM5^HRKJj>QIZXnB2
+Z59 !s100 [@LH0b]>NzP[5Ok3MKL013
+Z60 I;;]<5[8l7aCC8e1jg^LIo0
+Z61 V08ZQ^fOP@94`BdNH6Q^RW0
 R4
 R56
 R17
@@ -216,14 +216,13 @@ Z62 n@full@adder_1bit_vlg_sample_tst
 !s85 0
 !s101 -O0
 vFullAdder_1bit_vlg_vec_tst
-Z63 !s100 D5z1S:>b^^5;IdlkT9c=C0
-Z64 IT]C9io<4bnHH4YZZO8ZY=0
-Z65 VT7f@CaYkBoGZC@k_iJ6^>3
+Z63 Ie]3nVY]P8_[OmQl5`7HN?0
+Z64 VT7f@CaYkBoGZC@k_iJ6^>3
 R4
 R56
 R17
 R18
-Z66 L0 183
+Z65 L0 185
 R8
 r1
 31
@@ -231,7 +230,8 @@ R57
 R20
 R21
 R10
-Z67 n@full@adder_1bit_vlg_vec_tst
+Z66 n@full@adder_1bit_vlg_vec_tst
+Z67 !s100 k]X27nng<`<lLjbLiFahW0
 !i10b 1
 !s85 0
 !s101 -O0
@@ -315,3 +315,83 @@ Z87 n@full@adder_8bit_vlg_vec_tst
 !i10b 1
 !s85 0
 !s101 -O0
+vULA_1bit
+Z88 IWcIXf9R?>b=?d=YP6b0:[3
+Z89 VidZ^_k2?CG8Y645?D@Ujb0
+R4
+Z90 w1712854607
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z91 n@u@l@a_1bit
+!i10b 1
+Z92 !s100 R?GMOeT^]mb?fT_<fGIKC2
+!s85 0
+Z93 !s108 1712854607.339000
+R12
+!s101 -O0
+vULA_1bit_vlg_check_tst
+!i10b 1
+Z94 !s100 ZEG4<3gNPU<S<[^FG3oiR3
+Z95 IGm_83>>kV7>JElOb6AiM@3
+Z96 Vo=Kd<h_7;7acNlgWWTo8B3
+R4
+Z97 w1712854606
+R17
+R18
+L0 71
+R8
+r1
+!s85 0
+31
+Z98 !s108 1712854607.381000
+Z99 !s107 mic1.vt|
+R21
+!s101 -O0
+R10
+Z100 n@u@l@a_1bit_vlg_check_tst
+vULA_1bit_vlg_sample_tst
+!i10b 1
+Z101 !s100 K?9:3fVg:lOd3Y5O;2jIV3
+Z102 IKfRbf@@O7WFCGo87f_U8<3
+Z103 V?B`L=fgAHKPWAOoOS]]e23
+R4
+R97
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R98
+R99
+R21
+!s101 -O0
+R10
+Z104 n@u@l@a_1bit_vlg_sample_tst
+vULA_1bit_vlg_vec_tst
+!i10b 1
+Z105 !s100 ]i4=958Ob^_;iecCZz>=X0
+Z106 I0WElS?d[BLOE9nz=WaAB62
+Z107 VPjTNLXPzREjLmP<8h`CY01
+R4
+R97
+R17
+R18
+Z108 L0 193
+R8
+r1
+!s85 0
+31
+R98
+R99
+R21
+!s101 -O0
+R10
+Z109 n@u@l@a_1bit_vlg_vec_tst

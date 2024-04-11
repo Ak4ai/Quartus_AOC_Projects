@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 160 112)
+	(rect 16 16 160 144)
 	(text "FullAdder_1bit" (rect 5 0 86 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -40,9 +40,16 @@ applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "CIN" (rect 0 0 18 14)(font "Arial" (font_size 8)))
-		(text "CIN" (rect 21 59 39 73)(font "Arial" (font_size 8)))
+		(text "EntradaC" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "EntradaC" (rect 21 59 72 73)(font "Arial" (font_size 8)))
 		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "CIN" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "CIN" (rect 21 75 39 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
 	)
 	(port
 		(pt 144 32)
@@ -59,6 +66,6 @@ applicable agreement for further details.
 		(line (pt 144 48)(pt 128 48))
 	)
 	(drawing
-		(rectangle (rect 16 16 128 80))
+		(rectangle (rect 16 16 128 112))
 	)
 )
