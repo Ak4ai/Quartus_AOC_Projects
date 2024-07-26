@@ -72,23 +72,6 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1328 376 1344 552)
-	(text "OUTPUT" (rect 6 1 16 39)(font "Arial" (font_size 6))(vertical))
-	(text "COUT" (rect 4 90 16 120)(font "Arial" )(vertical))
-	(pt 8 0)
-	(drawing
-		(line (pt 8 0)(pt 8 52))
-		(line (pt 12 52)(pt 12 78))
-		(line (pt 4 52)(pt 4 78))
-		(line (pt 4 52)(pt 12 52))
-		(line (pt 12 78)(pt 8 82))
-		(line (pt 8 82)(pt 4 78))
-		(line (pt 4 78)(pt 8 82))
-	)
-	(rotate270)
-)
-(pin
-	(output)
 	(rect 16 336 192 352)
 	(text "OUTPUT" (rect 137 0 175 10)(font "Arial" (font_size 6)))
 	(text "S[7..0]" (rect 53 0 86 12)(font "Arial" ))
@@ -104,10 +87,27 @@ applicable agreement for further details.
 	)
 	(flipy)
 )
+(pin
+	(output)
+	(rect 1328 376 1344 552)
+	(text "OUTPUT" (rect 6 1 16 39)(font "Arial" (font_size 6))(vertical))
+	(text "cout" (rect 4 90 16 111)(font "Arial" )(vertical))
+	(pt 8 0)
+	(drawing
+		(line (pt 8 0)(pt 8 52))
+		(line (pt 12 52)(pt 12 78))
+		(line (pt 4 52)(pt 4 78))
+		(line (pt 4 52)(pt 12 52))
+		(line (pt 12 78)(pt 8 82))
+		(line (pt 8 82)(pt 4 78))
+		(line (pt 4 78)(pt 8 82))
+	)
+	(rotate270)
+)
 (symbol
-	(rect 176 96 272 240)
+	(rect 176 96 304 240)
 	(text "FullAdder_1bit" (rect 0 5 14 86)(font "Arial" (font_size 8))(vertical))
-	(text "inst" (rect 80 8 92 25)(font "Arial" )(vertical))
+	(text "inst" (rect 112 8 124 25)(font "Arial" )(vertical))
 	(port
 		(pt 32 0)
 		(input)
@@ -125,9 +125,16 @@ applicable agreement for further details.
 	(port
 		(pt 64 0)
 		(input)
-		(text "CIN" (rect 0 0 18 14)(font "Arial" (font_size 8)))
-		(text "CIN" (rect 59 21 73 39)(font "Arial" (font_size 8))(vertical))
+		(text "EntradaC" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "EntradaC" (rect 59 21 73 72)(font "Arial" (font_size 8))(vertical))
 		(line (pt 64 0)(pt 64 16))
+	)
+	(port
+		(pt 80 0)
+		(input)
+		(text "CIN" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "CIN" (rect 75 21 89 39)(font "Arial" (font_size 8))(vertical))
+		(line (pt 80 0)(pt 80 16))
 	)
 	(port
 		(pt 32 144)
@@ -144,14 +151,14 @@ applicable agreement for further details.
 		(line (pt 48 144)(pt 48 128))
 	)
 	(drawing
-		(rectangle (rect 16 16 80 128))
+		(rectangle (rect 16 16 112 128))
 	)
 	(flipy_rotate90)
 )
 (symbol
-	(rect 336 96 432 240)
+	(rect 336 96 464 240)
 	(text "FullAdder_1bit" (rect 0 5 14 86)(font "Arial" (font_size 8))(vertical))
-	(text "inst4" (rect 80 8 92 31)(font "Arial" )(vertical))
+	(text "inst4" (rect 112 8 124 31)(font "Arial" )(vertical))
 	(port
 		(pt 32 0)
 		(input)
@@ -169,9 +176,16 @@ applicable agreement for further details.
 	(port
 		(pt 64 0)
 		(input)
-		(text "CIN" (rect 0 0 18 14)(font "Arial" (font_size 8)))
-		(text "CIN" (rect 59 21 73 39)(font "Arial" (font_size 8))(vertical))
+		(text "EntradaC" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "EntradaC" (rect 59 21 73 72)(font "Arial" (font_size 8))(vertical))
 		(line (pt 64 0)(pt 64 16))
+	)
+	(port
+		(pt 80 0)
+		(input)
+		(text "CIN" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "CIN" (rect 75 21 89 39)(font "Arial" (font_size 8))(vertical))
+		(line (pt 80 0)(pt 80 16))
 	)
 	(port
 		(pt 32 144)
@@ -188,14 +202,14 @@ applicable agreement for further details.
 		(line (pt 48 144)(pt 48 128))
 	)
 	(drawing
-		(rectangle (rect 16 16 80 128))
+		(rectangle (rect 16 16 112 128))
 	)
 	(flipy_rotate90)
 )
 (symbol
-	(rect 496 96 592 240)
+	(rect 496 96 624 240)
 	(text "FullAdder_1bit" (rect 0 5 14 86)(font "Arial" (font_size 8))(vertical))
-	(text "inst5" (rect 80 8 92 31)(font "Arial" )(vertical))
+	(text "inst5" (rect 112 8 124 31)(font "Arial" )(vertical))
 	(port
 		(pt 32 0)
 		(input)
@@ -213,9 +227,16 @@ applicable agreement for further details.
 	(port
 		(pt 64 0)
 		(input)
-		(text "CIN" (rect 0 0 18 14)(font "Arial" (font_size 8)))
-		(text "CIN" (rect 59 21 73 39)(font "Arial" (font_size 8))(vertical))
+		(text "EntradaC" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "EntradaC" (rect 59 21 73 72)(font "Arial" (font_size 8))(vertical))
 		(line (pt 64 0)(pt 64 16))
+	)
+	(port
+		(pt 80 0)
+		(input)
+		(text "CIN" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "CIN" (rect 75 21 89 39)(font "Arial" (font_size 8))(vertical))
+		(line (pt 80 0)(pt 80 16))
 	)
 	(port
 		(pt 32 144)
@@ -232,14 +253,14 @@ applicable agreement for further details.
 		(line (pt 48 144)(pt 48 128))
 	)
 	(drawing
-		(rectangle (rect 16 16 80 128))
+		(rectangle (rect 16 16 112 128))
 	)
 	(flipy_rotate90)
 )
 (symbol
-	(rect 656 96 752 240)
+	(rect 656 96 784 240)
 	(text "FullAdder_1bit" (rect 0 5 14 86)(font "Arial" (font_size 8))(vertical))
-	(text "inst6" (rect 80 8 92 31)(font "Arial" )(vertical))
+	(text "inst6" (rect 112 8 124 31)(font "Arial" )(vertical))
 	(port
 		(pt 32 0)
 		(input)
@@ -257,9 +278,16 @@ applicable agreement for further details.
 	(port
 		(pt 64 0)
 		(input)
-		(text "CIN" (rect 0 0 18 14)(font "Arial" (font_size 8)))
-		(text "CIN" (rect 59 21 73 39)(font "Arial" (font_size 8))(vertical))
+		(text "EntradaC" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "EntradaC" (rect 59 21 73 72)(font "Arial" (font_size 8))(vertical))
 		(line (pt 64 0)(pt 64 16))
+	)
+	(port
+		(pt 80 0)
+		(input)
+		(text "CIN" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "CIN" (rect 75 21 89 39)(font "Arial" (font_size 8))(vertical))
+		(line (pt 80 0)(pt 80 16))
 	)
 	(port
 		(pt 32 144)
@@ -276,14 +304,14 @@ applicable agreement for further details.
 		(line (pt 48 144)(pt 48 128))
 	)
 	(drawing
-		(rectangle (rect 16 16 80 128))
+		(rectangle (rect 16 16 112 128))
 	)
 	(flipy_rotate90)
 )
 (symbol
-	(rect 816 96 912 240)
+	(rect 816 96 944 240)
 	(text "FullAdder_1bit" (rect 0 5 14 86)(font "Arial" (font_size 8))(vertical))
-	(text "inst7" (rect 80 8 92 31)(font "Arial" )(vertical))
+	(text "inst7" (rect 112 8 124 31)(font "Arial" )(vertical))
 	(port
 		(pt 32 0)
 		(input)
@@ -301,9 +329,16 @@ applicable agreement for further details.
 	(port
 		(pt 64 0)
 		(input)
-		(text "CIN" (rect 0 0 18 14)(font "Arial" (font_size 8)))
-		(text "CIN" (rect 59 21 73 39)(font "Arial" (font_size 8))(vertical))
+		(text "EntradaC" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "EntradaC" (rect 59 21 73 72)(font "Arial" (font_size 8))(vertical))
 		(line (pt 64 0)(pt 64 16))
+	)
+	(port
+		(pt 80 0)
+		(input)
+		(text "CIN" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "CIN" (rect 75 21 89 39)(font "Arial" (font_size 8))(vertical))
+		(line (pt 80 0)(pt 80 16))
 	)
 	(port
 		(pt 32 144)
@@ -320,14 +355,14 @@ applicable agreement for further details.
 		(line (pt 48 144)(pt 48 128))
 	)
 	(drawing
-		(rectangle (rect 16 16 80 128))
+		(rectangle (rect 16 16 112 128))
 	)
 	(flipy_rotate90)
 )
 (symbol
-	(rect 976 96 1072 240)
+	(rect 976 96 1104 240)
 	(text "FullAdder_1bit" (rect 0 5 14 86)(font "Arial" (font_size 8))(vertical))
-	(text "inst8" (rect 80 8 92 31)(font "Arial" )(vertical))
+	(text "inst8" (rect 112 8 124 31)(font "Arial" )(vertical))
 	(port
 		(pt 32 0)
 		(input)
@@ -345,9 +380,16 @@ applicable agreement for further details.
 	(port
 		(pt 64 0)
 		(input)
-		(text "CIN" (rect 0 0 18 14)(font "Arial" (font_size 8)))
-		(text "CIN" (rect 59 21 73 39)(font "Arial" (font_size 8))(vertical))
+		(text "EntradaC" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "EntradaC" (rect 59 21 73 72)(font "Arial" (font_size 8))(vertical))
 		(line (pt 64 0)(pt 64 16))
+	)
+	(port
+		(pt 80 0)
+		(input)
+		(text "CIN" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "CIN" (rect 75 21 89 39)(font "Arial" (font_size 8))(vertical))
+		(line (pt 80 0)(pt 80 16))
 	)
 	(port
 		(pt 32 144)
@@ -364,14 +406,14 @@ applicable agreement for further details.
 		(line (pt 48 144)(pt 48 128))
 	)
 	(drawing
-		(rectangle (rect 16 16 80 128))
+		(rectangle (rect 16 16 112 128))
 	)
 	(flipy_rotate90)
 )
 (symbol
-	(rect 1136 96 1232 240)
+	(rect 1136 96 1264 240)
 	(text "FullAdder_1bit" (rect 0 5 14 86)(font "Arial" (font_size 8))(vertical))
-	(text "inst9" (rect 80 8 92 31)(font "Arial" )(vertical))
+	(text "inst9" (rect 112 8 124 31)(font "Arial" )(vertical))
 	(port
 		(pt 32 0)
 		(input)
@@ -389,9 +431,16 @@ applicable agreement for further details.
 	(port
 		(pt 64 0)
 		(input)
-		(text "CIN" (rect 0 0 18 14)(font "Arial" (font_size 8)))
-		(text "CIN" (rect 59 21 73 39)(font "Arial" (font_size 8))(vertical))
+		(text "EntradaC" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "EntradaC" (rect 59 21 73 72)(font "Arial" (font_size 8))(vertical))
 		(line (pt 64 0)(pt 64 16))
+	)
+	(port
+		(pt 80 0)
+		(input)
+		(text "CIN" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "CIN" (rect 75 21 89 39)(font "Arial" (font_size 8))(vertical))
+		(line (pt 80 0)(pt 80 16))
 	)
 	(port
 		(pt 32 144)
@@ -408,14 +457,14 @@ applicable agreement for further details.
 		(line (pt 48 144)(pt 48 128))
 	)
 	(drawing
-		(rectangle (rect 16 16 80 128))
+		(rectangle (rect 16 16 112 128))
 	)
 	(flipy_rotate90)
 )
 (symbol
-	(rect 1296 96 1392 240)
+	(rect 1296 96 1424 240)
 	(text "FullAdder_1bit" (rect 0 5 14 86)(font "Arial" (font_size 8))(vertical))
-	(text "inst10" (rect 80 8 92 37)(font "Arial" )(vertical))
+	(text "inst10" (rect 112 8 124 37)(font "Arial" )(vertical))
 	(port
 		(pt 32 0)
 		(input)
@@ -433,9 +482,16 @@ applicable agreement for further details.
 	(port
 		(pt 64 0)
 		(input)
-		(text "CIN" (rect 0 0 18 14)(font "Arial" (font_size 8)))
-		(text "CIN" (rect 59 21 73 39)(font "Arial" (font_size 8))(vertical))
+		(text "EntradaC" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "EntradaC" (rect 59 21 73 72)(font "Arial" (font_size 8))(vertical))
 		(line (pt 64 0)(pt 64 16))
+	)
+	(port
+		(pt 80 0)
+		(input)
+		(text "CIN" (rect 0 0 18 14)(font "Arial" (font_size 8)))
+		(text "CIN" (rect 75 21 89 39)(font "Arial" (font_size 8))(vertical))
+		(line (pt 80 0)(pt 80 16))
 	)
 	(port
 		(pt 32 144)
@@ -452,7 +508,7 @@ applicable agreement for further details.
 		(line (pt 48 144)(pt 48 128))
 	)
 	(drawing
-		(rectangle (rect 16 16 80 128))
+		(rectangle (rect 16 16 112 128))
 	)
 	(flipy_rotate90)
 )
@@ -461,56 +517,16 @@ applicable agreement for further details.
 	(pt 320 72)
 )
 (connector
-	(pt 400 96)
-	(pt 400 72)
-)
-(connector
-	(pt 320 72)
-	(pt 400 72)
-)
-(connector
 	(pt 480 296)
 	(pt 480 72)
-)
-(connector
-	(pt 480 72)
-	(pt 560 72)
-)
-(connector
-	(pt 560 72)
-	(pt 560 96)
 )
 (connector
 	(pt 640 296)
 	(pt 640 72)
 )
 (connector
-	(pt 720 72)
-	(pt 640 72)
-)
-(connector
-	(pt 720 72)
-	(pt 720 96)
-)
-(connector
 	(pt 800 296)
 	(pt 800 72)
-)
-(connector
-	(pt 800 72)
-	(pt 880 72)
-)
-(connector
-	(pt 880 72)
-	(pt 880 96)
-)
-(connector
-	(pt 1040 96)
-	(pt 1040 72)
-)
-(connector
-	(pt 1040 72)
-	(pt 960 72)
 )
 (connector
 	(pt 960 72)
@@ -521,24 +537,8 @@ applicable agreement for further details.
 	(pt 1120 72)
 )
 (connector
-	(pt 1120 72)
-	(pt 1200 72)
-)
-(connector
-	(pt 1200 72)
-	(pt 1200 96)
-)
-(connector
 	(pt 1280 296)
 	(pt 1280 72)
-)
-(connector
-	(pt 1280 72)
-	(pt 1360 72)
-)
-(connector
-	(pt 1360 72)
-	(pt 1360 96)
 )
 (connector
 	(pt 384 296)
@@ -885,10 +885,6 @@ applicable agreement for further details.
 	(pt 224 64)
 )
 (connector
-	(pt 248 64)
-	(pt 240 64)
-)
-(connector
 	(pt 320 296)
 	(pt 224 296)
 )
@@ -908,10 +904,6 @@ applicable agreement for further details.
 (connector
 	(pt 224 64)
 	(pt 224 96)
-)
-(connector
-	(pt 240 64)
-	(pt 240 96)
 )
 (connector
 	(text "S[0]" (rect 192 303 204 323)(font "Arial" )(vertical))
@@ -1001,6 +993,70 @@ applicable agreement for further details.
 	(pt 32 -144)
 	(pt 32 -120)
 	(bus)
+)
+(connector
+	(pt 248 64)
+	(pt 256 64)
+)
+(connector
+	(pt 256 96)
+	(pt 256 64)
+)
+(connector
+	(pt 320 72)
+	(pt 416 72)
+)
+(connector
+	(pt 416 96)
+	(pt 416 72)
+)
+(connector
+	(pt 480 72)
+	(pt 576 72)
+)
+(connector
+	(pt 576 96)
+	(pt 576 72)
+)
+(connector
+	(pt 640 72)
+	(pt 736 72)
+)
+(connector
+	(pt 736 96)
+	(pt 736 72)
+)
+(connector
+	(pt 800 72)
+	(pt 896 72)
+)
+(connector
+	(pt 896 96)
+	(pt 896 72)
+)
+(connector
+	(pt 960 72)
+	(pt 1056 72)
+)
+(connector
+	(pt 1056 96)
+	(pt 1056 72)
+)
+(connector
+	(pt 1120 72)
+	(pt 1216 72)
+)
+(connector
+	(pt 1216 96)
+	(pt 1216 72)
+)
+(connector
+	(pt 1280 72)
+	(pt 1376 72)
+)
+(connector
+	(pt 1376 96)
+	(pt 1376 72)
 )
 (junction (pt 216 -120))
 (junction (pt 184 -136))

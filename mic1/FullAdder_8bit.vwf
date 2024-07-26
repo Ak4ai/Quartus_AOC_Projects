@@ -382,12 +382,8 @@ TRANSITION_LIST("A[1]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 1;
-			LEVEL 0 FOR 400.0;
-			LEVEL 1 FOR 400.0;
-		}
+		LEVEL 0 FOR 400.0;
+		LEVEL 1 FOR 400.0;
 		LEVEL 0 FOR 200.0;
 	}
 }
@@ -397,12 +393,8 @@ TRANSITION_LIST("A[0]")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 2;
-			LEVEL 0 FOR 200.0;
-			LEVEL 1 FOR 200.0;
-		}
+		LEVEL 0 FOR 600.0;
+		LEVEL 1 FOR 200.0;
 		LEVEL 0 FOR 200.0;
 	}
 }

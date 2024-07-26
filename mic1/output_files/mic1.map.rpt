@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mic1
-Thu Apr 11 13:56:16 2024
+Fri Jul 26 19:07:29 2024
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 11 13:56:16 2024           ;
+; Analysis & Synthesis Status        ; Successful - Fri Jul 26 19:07:29 2024           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; mic1                                            ;
-; Top-level Entity Name              ; ULA_1bit                                        ;
+; Top-level Entity Name              ; ULA_32bit                                       ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 7                                               ;
-;     Total combinational functions  ; 7                                               ;
+; Total logic elements               ; 194                                             ;
+;     Total combinational functions  ; 194                                             ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 10                                              ;
+; Total pins                         ; 103                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; ULA_1bit           ; mic1               ;
+; Top-level entity name                                                      ; ULA_32bit          ; mic1               ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -161,51 +161,174 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; decoder2to4.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/decoder2to4.bdf    ;         ;
 ; FullAdder_1bit.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/FullAdder_1bit.bdf ;         ;
 ; ULA_1bit.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/ULA_1bit.bdf       ;         ;
+; ULA_32bit.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/ULA_32bit.bdf      ;         ;
+; ULA_8bit.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/ULA_8bit.bdf       ;         ;
 ; xor3.bdf                         ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/xor3.bdf                    ;         ;
 ; xor4.bdf                         ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/xor4.bdf                    ;         ;
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary          ;
-+---------------------------------------------+--------+
-; Resource                                    ; Usage  ;
-+---------------------------------------------+--------+
-; Estimated Total logic elements              ; 7      ;
-;                                             ;        ;
-; Total combinational functions               ; 7      ;
-; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 4      ;
-;     -- 3 input functions                    ; 1      ;
-;     -- <=2 input functions                  ; 2      ;
-;                                             ;        ;
-; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 7      ;
-;     -- arithmetic mode                      ; 0      ;
-;                                             ;        ;
-; Total registers                             ; 0      ;
-;     -- Dedicated logic registers            ; 0      ;
-;     -- I/O registers                        ; 0      ;
-;                                             ;        ;
-; I/O pins                                    ; 10     ;
-; Embedded Multiplier 9-bit elements          ; 0      ;
-; Maximum fan-out node                        ; inst43 ;
-; Maximum fan-out                             ; 3      ;
-; Total fan-out                               ; 25     ;
-; Average fan-out                             ; 1.47   ;
-+---------------------------------------------+--------+
++------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                          ;
++---------------------------------------------+--------------------------------------------------------+
+; Resource                                    ; Usage                                                  ;
++---------------------------------------------+--------------------------------------------------------+
+; Estimated Total logic elements              ; 194                                                    ;
+;                                             ;                                                        ;
+; Total combinational functions               ; 194                                                    ;
+; Logic element usage by number of LUT inputs ;                                                        ;
+;     -- 4 input functions                    ; 104                                                    ;
+;     -- 3 input functions                    ; 48                                                     ;
+;     -- <=2 input functions                  ; 42                                                     ;
+;                                             ;                                                        ;
+; Logic elements by mode                      ;                                                        ;
+;     -- normal mode                          ; 194                                                    ;
+;     -- arithmetic mode                      ; 0                                                      ;
+;                                             ;                                                        ;
+; Total registers                             ; 0                                                      ;
+;     -- Dedicated logic registers            ; 0                                                      ;
+;     -- I/O registers                        ; 0                                                      ;
+;                                             ;                                                        ;
+; I/O pins                                    ; 103                                                    ;
+; Embedded Multiplier 9-bit elements          ; 0                                                      ;
+; Maximum fan-out node                        ; ULA_8bit:inst|ULA_1bit:inst7|decoder2to4:inst2|inst2~0 ;
+; Maximum fan-out                             ; 63                                                     ;
+; Total fan-out                               ; 677                                                    ;
+; Average fan-out                             ; 2.28                                                   ;
++---------------------------------------------+--------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                              ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                      ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------+
-; |ULA_1bit                  ; 7 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 10   ; 0            ; |ULA_1bit                                ; work         ;
-;    |FullAdder_1bit:inst|   ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_1bit|FullAdder_1bit:inst            ; work         ;
-;       |xor3:inst9|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_1bit|FullAdder_1bit:inst|xor3:inst9 ; work         ;
-;       |xor4:inst8|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_1bit|FullAdder_1bit:inst|xor4:inst8 ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                 ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                     ; Library Name ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+--------------+
+; |ULA_32bit                     ; 194 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 103  ; 0            ; |ULA_32bit                                                              ; work         ;
+;    |ULA_8bit:inst1|            ; 49 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1                                               ; work         ;
+;       |ULA_1bit:inst2|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst2                                ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst2|FullAdder_1bit:inst            ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst2|FullAdder_1bit:inst|xor3:inst9 ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst2|FullAdder_1bit:inst|xor4:inst8 ; work         ;
+;       |ULA_1bit:inst3|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst3                                ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst3|FullAdder_1bit:inst            ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst3|FullAdder_1bit:inst|xor3:inst9 ; work         ;
+;       |ULA_1bit:inst4|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst4                                ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst4|FullAdder_1bit:inst            ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst4|FullAdder_1bit:inst|xor3:inst9 ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst4|FullAdder_1bit:inst|xor4:inst8 ; work         ;
+;       |ULA_1bit:inst5|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst5                                ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst5|FullAdder_1bit:inst            ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst5|FullAdder_1bit:inst|xor3:inst9 ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst5|FullAdder_1bit:inst|xor4:inst8 ; work         ;
+;       |ULA_1bit:inst6|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst6                                ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst6|FullAdder_1bit:inst            ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst6|FullAdder_1bit:inst|xor3:inst9 ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst6|FullAdder_1bit:inst|xor4:inst8 ; work         ;
+;       |ULA_1bit:inst7|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst7                                ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst7|FullAdder_1bit:inst            ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst7|FullAdder_1bit:inst|xor3:inst9 ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst7|FullAdder_1bit:inst|xor4:inst8 ; work         ;
+;       |ULA_1bit:inst8|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst8                                ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst8|FullAdder_1bit:inst            ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst8|FullAdder_1bit:inst|xor3:inst9 ; work         ;
+;       |ULA_1bit:inst|          ; 7 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst                                 ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst|FullAdder_1bit:inst             ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst|FullAdder_1bit:inst|xor3:inst9  ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst1|ULA_1bit:inst|FullAdder_1bit:inst|xor4:inst8  ; work         ;
+;    |ULA_8bit:inst3|            ; 48 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3                                               ; work         ;
+;       |ULA_1bit:inst2|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst2                                ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst2|FullAdder_1bit:inst            ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst2|FullAdder_1bit:inst|xor3:inst9 ; work         ;
+;       |ULA_1bit:inst3|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst3                                ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst3|FullAdder_1bit:inst            ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst3|FullAdder_1bit:inst|xor3:inst9 ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst3|FullAdder_1bit:inst|xor4:inst8 ; work         ;
+;       |ULA_1bit:inst4|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst4                                ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst4|FullAdder_1bit:inst            ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst4|FullAdder_1bit:inst|xor3:inst9 ; work         ;
+;       |ULA_1bit:inst5|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst5                                ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst5|FullAdder_1bit:inst            ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst5|FullAdder_1bit:inst|xor3:inst9 ; work         ;
+;       |ULA_1bit:inst6|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst6                                ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst6|FullAdder_1bit:inst            ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst6|FullAdder_1bit:inst|xor3:inst9 ; work         ;
+;       |ULA_1bit:inst7|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst7                                ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst7|FullAdder_1bit:inst            ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst7|FullAdder_1bit:inst|xor3:inst9 ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst7|FullAdder_1bit:inst|xor4:inst8 ; work         ;
+;       |ULA_1bit:inst8|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst8                                ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst8|FullAdder_1bit:inst            ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst8|FullAdder_1bit:inst|xor3:inst9 ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst8|FullAdder_1bit:inst|xor4:inst8 ; work         ;
+;       |ULA_1bit:inst|          ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst                                 ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst|FullAdder_1bit:inst             ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst|FullAdder_1bit:inst|xor3:inst9  ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst3|ULA_1bit:inst|FullAdder_1bit:inst|xor4:inst8  ; work         ;
+;    |ULA_8bit:inst4|            ; 48 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4                                               ; work         ;
+;       |ULA_1bit:inst2|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst2                                ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst2|FullAdder_1bit:inst            ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst2|FullAdder_1bit:inst|xor3:inst9 ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst2|FullAdder_1bit:inst|xor4:inst8 ; work         ;
+;       |ULA_1bit:inst3|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst3                                ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst3|FullAdder_1bit:inst            ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst3|FullAdder_1bit:inst|xor3:inst9 ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst3|FullAdder_1bit:inst|xor4:inst8 ; work         ;
+;       |ULA_1bit:inst4|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst4                                ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst4|FullAdder_1bit:inst            ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst4|FullAdder_1bit:inst|xor3:inst9 ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst4|FullAdder_1bit:inst|xor4:inst8 ; work         ;
+;       |ULA_1bit:inst5|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst5                                ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst5|FullAdder_1bit:inst            ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst5|FullAdder_1bit:inst|xor3:inst9 ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst5|FullAdder_1bit:inst|xor4:inst8 ; work         ;
+;       |ULA_1bit:inst6|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst6                                ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst6|FullAdder_1bit:inst            ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst6|FullAdder_1bit:inst|xor3:inst9 ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst6|FullAdder_1bit:inst|xor4:inst8 ; work         ;
+;       |ULA_1bit:inst7|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst7                                ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst7|FullAdder_1bit:inst            ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst7|FullAdder_1bit:inst|xor3:inst9 ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst7|FullAdder_1bit:inst|xor4:inst8 ; work         ;
+;       |ULA_1bit:inst8|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst8                                ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst8|FullAdder_1bit:inst            ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst8|FullAdder_1bit:inst|xor3:inst9 ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst8|FullAdder_1bit:inst|xor4:inst8 ; work         ;
+;       |ULA_1bit:inst|          ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst                                 ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst|FullAdder_1bit:inst             ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst4|ULA_1bit:inst|FullAdder_1bit:inst|xor3:inst9  ; work         ;
+;    |ULA_8bit:inst|             ; 49 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst                                                ; work         ;
+;       |ULA_1bit:inst2|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst2                                 ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst2|FullAdder_1bit:inst             ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst2|FullAdder_1bit:inst|xor3:inst9  ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst2|FullAdder_1bit:inst|xor4:inst8  ; work         ;
+;       |ULA_1bit:inst3|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst3                                 ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst3|FullAdder_1bit:inst             ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst3|FullAdder_1bit:inst|xor3:inst9  ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst3|FullAdder_1bit:inst|xor4:inst8  ; work         ;
+;       |ULA_1bit:inst4|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst4                                 ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst4|FullAdder_1bit:inst             ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst4|FullAdder_1bit:inst|xor3:inst9  ; work         ;
+;       |ULA_1bit:inst5|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst5                                 ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst5|FullAdder_1bit:inst             ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst5|FullAdder_1bit:inst|xor3:inst9  ; work         ;
+;       |ULA_1bit:inst6|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst6                                 ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst6|FullAdder_1bit:inst             ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst6|FullAdder_1bit:inst|xor3:inst9  ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst6|FullAdder_1bit:inst|xor4:inst8  ; work         ;
+;       |ULA_1bit:inst7|         ; 7 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst7                                 ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst7|FullAdder_1bit:inst             ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst7|FullAdder_1bit:inst|xor3:inst9  ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst7|FullAdder_1bit:inst|xor4:inst8  ; work         ;
+;          |decoder2to4:inst2|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst7|decoder2to4:inst2               ; work         ;
+;       |ULA_1bit:inst8|         ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst8                                 ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst8|FullAdder_1bit:inst             ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst8|FullAdder_1bit:inst|xor3:inst9  ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst8|FullAdder_1bit:inst|xor4:inst8  ; work         ;
+;       |ULA_1bit:inst|          ; 6 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst                                  ; work         ;
+;          |FullAdder_1bit:inst| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst|FullAdder_1bit:inst              ; work         ;
+;             |xor3:inst9|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst|FullAdder_1bit:inst|xor3:inst9   ; work         ;
+;             |xor4:inst8|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ULA_32bit|ULA_8bit:inst|ULA_1bit:inst|FullAdder_1bit:inst|xor4:inst8   ; work         ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -239,7 +362,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Apr 11 13:56:15 2024
+    Info: Processing started: Fri Jul 26 19:07:26 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mic1 -c mic1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file decoder2to4.bdf
@@ -252,23 +375,31 @@ Info (12021): Found 1 design units, including 1 entities, in source file fulladd
     Info (12023): Found entity 1: FullAdder_8bit
 Info (12021): Found 1 design units, including 1 entities, in source file ula_1bit.bdf
     Info (12023): Found entity 1: ULA_1bit
-Info (12127): Elaborating entity "ULA_1bit" for the top level hierarchy
-Info (12128): Elaborating entity "FullAdder_1bit" for hierarchy "FullAdder_1bit:inst"
-Info (12128): Elaborating entity "XOR3" for hierarchy "FullAdder_1bit:inst|XOR3:inst9"
-Info (12130): Elaborated megafunction instantiation "FullAdder_1bit:inst|XOR3:inst9"
-Info (12128): Elaborating entity "XOR4" for hierarchy "FullAdder_1bit:inst|XOR4:inst8"
-Info (12130): Elaborated megafunction instantiation "FullAdder_1bit:inst|XOR4:inst8"
-Info (12128): Elaborating entity "decoder2to4" for hierarchy "decoder2to4:inst2"
+Info (12021): Found 1 design units, including 1 entities, in source file ula_32bit.bdf
+    Info (12023): Found entity 1: ULA_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file ula_8bit.bdf
+    Info (12023): Found entity 1: ULA_8bit
+Info (12021): Found 1 design units, including 1 entities, in source file shifter.bdf
+    Info (12023): Found entity 1: SHIFTER
+Info (12127): Elaborating entity "ULA_32bit" for the top level hierarchy
+Info (12128): Elaborating entity "ULA_8bit" for hierarchy "ULA_8bit:inst4"
+Info (12128): Elaborating entity "ULA_1bit" for hierarchy "ULA_8bit:inst4|ULA_1bit:inst8"
+Info (12128): Elaborating entity "FullAdder_1bit" for hierarchy "ULA_8bit:inst4|ULA_1bit:inst8|FullAdder_1bit:inst"
+Info (12128): Elaborating entity "XOR3" for hierarchy "ULA_8bit:inst4|ULA_1bit:inst8|FullAdder_1bit:inst|XOR3:inst9"
+Info (12130): Elaborated megafunction instantiation "ULA_8bit:inst4|ULA_1bit:inst8|FullAdder_1bit:inst|XOR3:inst9"
+Info (12128): Elaborating entity "XOR4" for hierarchy "ULA_8bit:inst4|ULA_1bit:inst8|FullAdder_1bit:inst|XOR4:inst8"
+Info (12130): Elaborated megafunction instantiation "ULA_8bit:inst4|ULA_1bit:inst8|FullAdder_1bit:inst|XOR4:inst8"
+Info (12128): Elaborating entity "decoder2to4" for hierarchy "ULA_8bit:inst4|ULA_1bit:inst8|decoder2to4:inst2"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 17 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 7 logic cells
+Info (21057): Implemented 297 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 70 input pins
+    Info (21059): Implemented 33 output pins
+    Info (21061): Implemented 194 logic cells
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 365 megabytes
-    Info: Processing ended: Thu Apr 11 13:56:16 2024
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 366 megabytes
+    Info: Processing ended: Fri Jul 26 19:07:29 2024
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:01
 
 
