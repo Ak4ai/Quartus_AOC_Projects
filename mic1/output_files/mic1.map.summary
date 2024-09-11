@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri Jul 26 19:07:29 2024
+Analysis & Synthesis Status : Successful - Wed Sep 11 18:01:57 2024
 Quartus II 32-bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : mic1
-Top-level Entity Name : ULA_32bit
+Top-level Entity Name : REGISTER32bit
 Family : Cyclone II
-Total logic elements : 194
-    Total combinational functions : 194
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 103
+Total logic elements : 85
+    Total combinational functions : 85
+    Dedicated logic registers : 28
+Total registers : 28
+Total pins : 166
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
