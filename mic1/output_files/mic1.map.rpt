@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mic1
-Wed Sep 11 18:01:57 2024
+Thu Sep 12 00:45:03 2024
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Sep 11 18:01:57 2024           ;
+; Analysis & Synthesis Status        ; Successful - Thu Sep 12 00:45:03 2024           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; mic1                                            ;
-; Top-level Entity Name              ; REGISTER32bit                                   ;
+; Top-level Entity Name              ; MAR                                             ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 85                                              ;
-;     Total combinational functions  ; 85                                              ;
+; Total logic elements               ; 29                                              ;
+;     Total combinational functions  ; 1                                               ;
 ;     Dedicated logic registers      ; 28                                              ;
 ; Total registers                    ; 28                                              ;
-; Total pins                         ; 166                                             ;
+; Total pins                         ; 102                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; REGISTER32bit      ; mic1               ;
+; Top-level entity name                                                      ; MAR                ; mic1               ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -158,55 +158,57 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                   ; Library ;
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
+; MAR.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/MAR.bdf           ;         ;
 ; REGISTER32bit.bdf                ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/REGISTER32bit.bdf ;         ;
 ; REGISTER4bit.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/REGISTER4bit.bdf  ;         ;
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 85    ;
-;                                             ;       ;
-; Total combinational functions               ; 85    ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 56    ;
-;     -- 3 input functions                    ; 28    ;
-;     -- <=2 input functions                  ; 1     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 85    ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 28    ;
-;     -- Dedicated logic registers            ; 28    ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 166   ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; LOAD  ;
-; Maximum fan-out                             ; 84    ;
-; Total fan-out                               ; 514   ;
-; Average fan-out                             ; 1.84  ;
-+---------------------------------------------+-------+
++-------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                             ;
++---------------------------------------------+---------------------------+
+; Resource                                    ; Usage                     ;
++---------------------------------------------+---------------------------+
+; Estimated Total logic elements              ; 29                        ;
+;                                             ;                           ;
+; Total combinational functions               ; 1                         ;
+; Logic element usage by number of LUT inputs ;                           ;
+;     -- 4 input functions                    ; 0                         ;
+;     -- 3 input functions                    ; 0                         ;
+;     -- <=2 input functions                  ; 1                         ;
+;                                             ;                           ;
+; Logic elements by mode                      ;                           ;
+;     -- normal mode                          ; 1                         ;
+;     -- arithmetic mode                      ; 0                         ;
+;                                             ;                           ;
+; Total registers                             ; 28                        ;
+;     -- Dedicated logic registers            ; 28                        ;
+;     -- I/O registers                        ; 0                         ;
+;                                             ;                           ;
+; I/O pins                                    ; 102                       ;
+; Embedded Multiplier 9-bit elements          ; 0                         ;
+; Maximum fan-out node                        ; REGISTER32bit:inst|inst12 ;
+; Maximum fan-out                             ; 28                        ;
+; Total fan-out                               ; 114                       ;
+; Average fan-out                             ; 0.87                      ;
++---------------------------------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                        ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+--------------+
-; |REGISTER32bit             ; 85 (1)            ; 28 (0)       ; 0           ; 0            ; 0       ; 0         ; 166  ; 0            ; |REGISTER32bit                     ; work         ;
-;    |REGISTER4bit:inst11|   ; 12 (12)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REGISTER32bit|REGISTER4bit:inst11 ; work         ;
-;    |REGISTER4bit:inst14|   ; 12 (12)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REGISTER32bit|REGISTER4bit:inst14 ; work         ;
-;    |REGISTER4bit:inst15|   ; 12 (12)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REGISTER32bit|REGISTER4bit:inst15 ; work         ;
-;    |REGISTER4bit:inst16|   ; 12 (12)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REGISTER32bit|REGISTER4bit:inst16 ; work         ;
-;    |REGISTER4bit:inst2|    ; 12 (12)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REGISTER32bit|REGISTER4bit:inst2  ; work         ;
-;    |REGISTER4bit:inst3|    ; 12 (12)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REGISTER32bit|REGISTER4bit:inst3  ; work         ;
-;    |REGISTER4bit:inst|     ; 12 (12)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |REGISTER32bit|REGISTER4bit:inst   ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                  ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+
+; Compilation Hierarchy Node  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Library Name ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+
+; |MAR                        ; 1 (0)             ; 28 (0)       ; 0           ; 0            ; 0       ; 0         ; 102  ; 0            ; |MAR                                        ; work         ;
+;    |REGISTER32bit:inst|     ; 1 (1)             ; 28 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAR|REGISTER32bit:inst                     ; work         ;
+;       |REGISTER4bit:inst11| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAR|REGISTER32bit:inst|REGISTER4bit:inst11 ; work         ;
+;       |REGISTER4bit:inst14| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAR|REGISTER32bit:inst|REGISTER4bit:inst14 ; work         ;
+;       |REGISTER4bit:inst15| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAR|REGISTER32bit:inst|REGISTER4bit:inst15 ; work         ;
+;       |REGISTER4bit:inst16| ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAR|REGISTER32bit:inst|REGISTER4bit:inst16 ; work         ;
+;       |REGISTER4bit:inst2|  ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAR|REGISTER32bit:inst|REGISTER4bit:inst2  ; work         ;
+;       |REGISTER4bit:inst3|  ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAR|REGISTER32bit:inst|REGISTER4bit:inst3  ; work         ;
+;       |REGISTER4bit:inst|   ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAR|REGISTER32bit:inst|REGISTER4bit:inst   ; work         ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -240,7 +242,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Sep 11 18:01:56 2024
+    Info: Processing started: Thu Sep 12 00:45:02 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mic1 -c mic1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file decoder2to4.bdf
@@ -259,8 +261,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file ula_8bi
     Info (12023): Found entity 1: ULA_8bit
 Info (12021): Found 1 design units, including 1 entities, in source file shifter.bdf
     Info (12023): Found entity 1: SHIFTER
-Info (12021): Found 1 design units, including 1 entities, in source file register8bit.bdf
-    Info (12023): Found entity 1: REGISTER8bit
+Warning (12019): Can't analyze file -- file REGISTER8bit.bdf is missing
 Info (12021): Found 1 design units, including 1 entities, in source file bank_reg.bdf
     Info (12023): Found entity 1: BANK_REG
 Info (12021): Found 1 design units, including 1 entities, in source file mar.bdf
@@ -298,60 +299,98 @@ Info (12021): Found 1 design units, including 1 entities, in source file ram_tes
     Info (12023): Found entity 1: RAM_TEST
 Info (12021): Found 1 design units, including 1 entities, in source file register4bit.bdf
     Info (12023): Found entity 1: REGISTER4bit
-Info (12127): Elaborating entity "REGISTER32bit" for the top level hierarchy
+Info (12127): Elaborating entity "MAR" for the top level hierarchy
+Info (12128): Elaborating entity "REGISTER32bit" for hierarchy "REGISTER32bit:inst"
 Warning (275011): Block or symbol "REGISTER4bit" of instance "inst1" overlaps another block or symbol
-Info (12128): Elaborating entity "REGISTER4bit" for hierarchy "REGISTER4bit:inst3"
-Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "REGISTER4bit:inst16|inst" is converted into an equivalent circuit using register "REGISTER4bit:inst16|inst~_emulated" and latch "REGISTER4bit:inst16|inst~1"
-    Warning (13310): Register "REGISTER4bit:inst16|inst5" is converted into an equivalent circuit using register "REGISTER4bit:inst16|inst5~_emulated" and latch "REGISTER4bit:inst16|inst5~1"
-    Warning (13310): Register "REGISTER4bit:inst16|inst16" is converted into an equivalent circuit using register "REGISTER4bit:inst16|inst16~_emulated" and latch "REGISTER4bit:inst16|inst16~1"
-    Warning (13310): Register "REGISTER4bit:inst16|inst20" is converted into an equivalent circuit using register "REGISTER4bit:inst16|inst20~_emulated" and latch "REGISTER4bit:inst16|inst20~1"
-    Warning (13310): Register "REGISTER4bit:inst15|inst" is converted into an equivalent circuit using register "REGISTER4bit:inst15|inst~_emulated" and latch "REGISTER4bit:inst15|inst~1"
-    Warning (13310): Register "REGISTER4bit:inst15|inst5" is converted into an equivalent circuit using register "REGISTER4bit:inst15|inst5~_emulated" and latch "REGISTER4bit:inst15|inst5~1"
-    Warning (13310): Register "REGISTER4bit:inst15|inst16" is converted into an equivalent circuit using register "REGISTER4bit:inst15|inst16~_emulated" and latch "REGISTER4bit:inst15|inst16~1"
-    Warning (13310): Register "REGISTER4bit:inst15|inst20" is converted into an equivalent circuit using register "REGISTER4bit:inst15|inst20~_emulated" and latch "REGISTER4bit:inst15|inst20~1"
-    Warning (13310): Register "REGISTER4bit:inst14|inst" is converted into an equivalent circuit using register "REGISTER4bit:inst14|inst~_emulated" and latch "REGISTER4bit:inst14|inst~1"
-    Warning (13310): Register "REGISTER4bit:inst14|inst5" is converted into an equivalent circuit using register "REGISTER4bit:inst14|inst5~_emulated" and latch "REGISTER4bit:inst14|inst5~1"
-    Warning (13310): Register "REGISTER4bit:inst14|inst16" is converted into an equivalent circuit using register "REGISTER4bit:inst14|inst16~_emulated" and latch "REGISTER4bit:inst14|inst16~1"
-    Warning (13310): Register "REGISTER4bit:inst14|inst20" is converted into an equivalent circuit using register "REGISTER4bit:inst14|inst20~_emulated" and latch "REGISTER4bit:inst14|inst20~1"
-    Warning (13310): Register "REGISTER4bit:inst11|inst" is converted into an equivalent circuit using register "REGISTER4bit:inst11|inst~_emulated" and latch "REGISTER4bit:inst11|inst~1"
-    Warning (13310): Register "REGISTER4bit:inst11|inst5" is converted into an equivalent circuit using register "REGISTER4bit:inst11|inst5~_emulated" and latch "REGISTER4bit:inst11|inst5~1"
-    Warning (13310): Register "REGISTER4bit:inst11|inst16" is converted into an equivalent circuit using register "REGISTER4bit:inst11|inst16~_emulated" and latch "REGISTER4bit:inst11|inst16~1"
-    Warning (13310): Register "REGISTER4bit:inst11|inst20" is converted into an equivalent circuit using register "REGISTER4bit:inst11|inst20~_emulated" and latch "REGISTER4bit:inst11|inst20~1"
-    Warning (13310): Register "REGISTER4bit:inst3|inst" is converted into an equivalent circuit using register "REGISTER4bit:inst3|inst~_emulated" and latch "REGISTER4bit:inst3|inst~1"
-    Warning (13310): Register "REGISTER4bit:inst3|inst5" is converted into an equivalent circuit using register "REGISTER4bit:inst3|inst5~_emulated" and latch "REGISTER4bit:inst3|inst5~1"
-    Warning (13310): Register "REGISTER4bit:inst3|inst16" is converted into an equivalent circuit using register "REGISTER4bit:inst3|inst16~_emulated" and latch "REGISTER4bit:inst3|inst16~1"
-    Warning (13310): Register "REGISTER4bit:inst3|inst20" is converted into an equivalent circuit using register "REGISTER4bit:inst3|inst20~_emulated" and latch "REGISTER4bit:inst3|inst20~1"
-    Warning (13310): Register "REGISTER4bit:inst2|inst" is converted into an equivalent circuit using register "REGISTER4bit:inst2|inst~_emulated" and latch "REGISTER4bit:inst2|inst~1"
-    Warning (13310): Register "REGISTER4bit:inst2|inst5" is converted into an equivalent circuit using register "REGISTER4bit:inst2|inst5~_emulated" and latch "REGISTER4bit:inst2|inst5~1"
-    Warning (13310): Register "REGISTER4bit:inst2|inst16" is converted into an equivalent circuit using register "REGISTER4bit:inst2|inst16~_emulated" and latch "REGISTER4bit:inst2|inst16~1"
-    Warning (13310): Register "REGISTER4bit:inst2|inst20" is converted into an equivalent circuit using register "REGISTER4bit:inst2|inst20~_emulated" and latch "REGISTER4bit:inst2|inst20~1"
-    Warning (13310): Register "REGISTER4bit:inst|inst20" is converted into an equivalent circuit using register "REGISTER4bit:inst|inst20~_emulated" and latch "REGISTER4bit:inst|inst20~1"
-    Warning (13310): Register "REGISTER4bit:inst|inst16" is converted into an equivalent circuit using register "REGISTER4bit:inst|inst16~_emulated" and latch "REGISTER4bit:inst|inst16~1"
-    Warning (13310): Register "REGISTER4bit:inst|inst5" is converted into an equivalent circuit using register "REGISTER4bit:inst|inst5~_emulated" and latch "REGISTER4bit:inst|inst5~1"
-    Warning (13310): Register "REGISTER4bit:inst|inst" is converted into an equivalent circuit using register "REGISTER4bit:inst|inst~_emulated" and latch "REGISTER4bit:inst|inst~1"
+Info (12128): Elaborating entity "REGISTER4bit" for hierarchy "REGISTER32bit:inst|REGISTER4bit:inst3"
+Warning (13044): Always-enabled tri-state buffer(s) removed
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[31]" to the node "DATA_ADDR[31]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[30]" to the node "DATA_ADDR[30]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[29]" to the node "DATA_ADDR[29]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[28]" to the node "DATA_ADDR[28]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[27]" to the node "DATA_ADDR[27]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[26]" to the node "DATA_ADDR[26]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[25]" to the node "DATA_ADDR[25]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[24]" to the node "DATA_ADDR[24]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[23]" to the node "DATA_ADDR[23]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[22]" to the node "DATA_ADDR[22]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[21]" to the node "DATA_ADDR[21]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[20]" to the node "DATA_ADDR[20]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[19]" to the node "DATA_ADDR[19]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[18]" to the node "DATA_ADDR[18]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[17]" to the node "DATA_ADDR[17]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[16]" to the node "DATA_ADDR[16]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[15]" to the node "DATA_ADDR[15]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[14]" to the node "DATA_ADDR[14]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[13]" to the node "DATA_ADDR[13]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[12]" to the node "DATA_ADDR[12]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[11]" to the node "DATA_ADDR[11]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[10]" to the node "DATA_ADDR[10]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[9]" to the node "DATA_ADDR[9]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[8]" to the node "DATA_ADDR[8]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[3]" to the node "DATA_ADDR[3]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[2]" to the node "DATA_ADDR[2]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[1]" to the node "DATA_ADDR[1]" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "REGISTER32bit:inst|inst10[0]" to the node "DATA_ADDR[0]" into a wire
+Warning (13030): Reduced the following open-drain buffers that are fed by GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "REGISTER32bit:inst|inst10[7]" to the output pin "DATA_ADDR[7]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "REGISTER32bit:inst|inst10[6]" to the output pin "DATA_ADDR[6]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "REGISTER32bit:inst|inst10[5]" to the output pin "DATA_ADDR[5]" to GND
+    Warning (13031): Reduced fanout from the always-enabled open-drain buffer "REGISTER32bit:inst|inst10[4]" to the output pin "DATA_ADDR[4]" to GND
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "DATA_ADDR[7]" is stuck at GND
+    Warning (13410): Pin "DATA_ADDR[6]" is stuck at GND
+    Warning (13410): Pin "DATA_ADDR[5]" is stuck at GND
+    Warning (13410): Pin "DATA_ADDR[4]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 12 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "IN_MEM[7]"
-    Warning (15610): No output dependent on input pin "IN_MEM[6]"
-    Warning (15610): No output dependent on input pin "IN_MEM[5]"
-    Warning (15610): No output dependent on input pin "IN_MEM[4]"
-    Warning (15610): No output dependent on input pin "IN_C[7]"
-    Warning (15610): No output dependent on input pin "IN_C[6]"
-    Warning (15610): No output dependent on input pin "IN_C[5]"
-    Warning (15610): No output dependent on input pin "IN_C[4]"
-    Warning (15610): No output dependent on input pin "IN_LOAD[7]"
-    Warning (15610): No output dependent on input pin "IN_LOAD[6]"
-    Warning (15610): No output dependent on input pin "IN_LOAD[5]"
-    Warning (15610): No output dependent on input pin "IN_LOAD[4]"
-Info (21057): Implemented 251 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 102 input pins
-    Info (21059): Implemented 64 output pins
-    Info (21061): Implemented 85 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 44 warnings
-    Info: Peak virtual memory: 397 megabytes
-    Info: Processing ended: Wed Sep 11 18:01:57 2024
+Warning (21074): Design contains 39 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "MIR[35]"
+    Warning (15610): No output dependent on input pin "MIR[34]"
+    Warning (15610): No output dependent on input pin "MIR[33]"
+    Warning (15610): No output dependent on input pin "MIR[32]"
+    Warning (15610): No output dependent on input pin "MIR[31]"
+    Warning (15610): No output dependent on input pin "MIR[30]"
+    Warning (15610): No output dependent on input pin "MIR[29]"
+    Warning (15610): No output dependent on input pin "MIR[28]"
+    Warning (15610): No output dependent on input pin "MIR[27]"
+    Warning (15610): No output dependent on input pin "MIR[26]"
+    Warning (15610): No output dependent on input pin "MIR[25]"
+    Warning (15610): No output dependent on input pin "MIR[24]"
+    Warning (15610): No output dependent on input pin "MIR[23]"
+    Warning (15610): No output dependent on input pin "MIR[22]"
+    Warning (15610): No output dependent on input pin "MIR[21]"
+    Warning (15610): No output dependent on input pin "MIR[20]"
+    Warning (15610): No output dependent on input pin "MIR[19]"
+    Warning (15610): No output dependent on input pin "MIR[18]"
+    Warning (15610): No output dependent on input pin "MIR[17]"
+    Warning (15610): No output dependent on input pin "MIR[16]"
+    Warning (15610): No output dependent on input pin "MIR[15]"
+    Warning (15610): No output dependent on input pin "MIR[14]"
+    Warning (15610): No output dependent on input pin "MIR[13]"
+    Warning (15610): No output dependent on input pin "MIR[12]"
+    Warning (15610): No output dependent on input pin "MIR[11]"
+    Warning (15610): No output dependent on input pin "MIR[10]"
+    Warning (15610): No output dependent on input pin "MIR[9]"
+    Warning (15610): No output dependent on input pin "MIR[8]"
+    Warning (15610): No output dependent on input pin "MIR[6]"
+    Warning (15610): No output dependent on input pin "MIR[5]"
+    Warning (15610): No output dependent on input pin "MIR[4]"
+    Warning (15610): No output dependent on input pin "MIR[3]"
+    Warning (15610): No output dependent on input pin "MIR[2]"
+    Warning (15610): No output dependent on input pin "MIR[1]"
+    Warning (15610): No output dependent on input pin "MIR[0]"
+    Warning (15610): No output dependent on input pin "INPUT[7]"
+    Warning (15610): No output dependent on input pin "INPUT[6]"
+    Warning (15610): No output dependent on input pin "INPUT[5]"
+    Warning (15610): No output dependent on input pin "INPUT[4]"
+Info (21057): Implemented 131 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 70 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 29 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 82 warnings
+    Info: Peak virtual memory: 393 megabytes
+    Info: Processing ended: Thu Sep 12 00:45:03 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
