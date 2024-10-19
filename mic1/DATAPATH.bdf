@@ -534,18 +534,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 64 240)
-	(pt 72 240)
-	(bus)
-)
-(connector
 	(pt 72 240)
 	(pt 88 240)
-	(bus)
-)
-(connector
-	(pt 64 304)
-	(pt 72 304)
 	(bus)
 )
 (connector
@@ -556,5 +546,3 @@ applicable agreement for further details.
 (junction (pt 584 184))
 (junction (pt 576 264))
 (junction (pt 568 280))
-(junction (pt 72 304))
-(junction (pt 72 240))
