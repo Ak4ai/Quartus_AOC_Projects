@@ -392,6 +392,22 @@ applicable agreement for further details.
 	)
 	(rotate180)
 )
+(symbol
+	(rect 880 320 896 352)
+	(text "VCC" (rect 0 5 10 25)(font "Arial" (font_size 6))(vertical))
+	(text "inst2" (rect 5 6 17 29)(font "Arial" )(vertical)(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 7 8 19 13)(font "Courier New" (bold))(vertical)(invisible))
+		(line (pt 16 16)(pt 8 16))
+	)
+	(drawing
+		(line (pt 8 24)(pt 8 8))
+	)
+	(rotate90)
+)
 (connector
 	(text "IN_C[31..0]" (rect 763 224 820 236)(font "Arial" ))
 	(pt 744 240)
@@ -418,11 +434,6 @@ applicable agreement for further details.
 	(text "CLOCK" (rect 904 288 941 300)(font "Arial" ))
 	(pt 896 304)
 	(pt 960 304)
-)
-(connector
-	(text "MIR[6]" (rect 917 320 950 332)(font "Arial" ))
-	(pt 896 336)
-	(pt 960 336)
 )
 (connector
 	(text "IN_C[31..0]" (rect 894 192 951 204)(font "Arial" ))
@@ -595,5 +606,10 @@ applicable agreement for further details.
 	(text "IN_SELECT" (rect 752 304 811 316)(font "Arial" ))
 	(pt 776 320)
 	(pt 584 320)
+)
+(connector
+	(text "<<__$DEF_ALIAS149>>" (rect 917 320 1035 332)(font "Arial" )(invisible))
+	(pt 896 336)
+	(pt 960 336)
 )
 (junction (pt 584 344))
