@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 32-bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "10/18/2024 23:55:11"
+// DATE "10/25/2024 15:49:04"
 
 // 
 // Device: Altera EP2C35F484C6 Package FBGA484
@@ -1191,11 +1191,11 @@ wire \inst2|inst4|inst|inst1|inst20~regout ;
 wire \inst2|inst4|inst|inst|inst28~regout ;
 wire \inst2|inst4|inst|inst|inst24~regout ;
 wire \inst2|inst4|inst|inst|inst12~regout ;
+wire [31:0] \inst|inst2 ;
+wire [31:0] \inst|inst1 ;
 wire [35:0] \MIR~combout ;
 wire [31:0] \IN_MEM~combout ;
 wire [7:0] \IN_MBR~combout ;
-wire [31:0] \inst|inst2 ;
-wire [31:0] \inst|inst1 ;
 
 
 // Location: LCCOMB_X34_Y22_N16

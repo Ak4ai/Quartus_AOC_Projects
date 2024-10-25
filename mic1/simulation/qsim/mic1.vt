@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/18/2024 23:55:10"
+// Generated on "10/25/2024 15:53:38"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    DATAPATH
 // 
@@ -172,165 +172,45 @@ begin
 end
 
 
-// expected ADDRESS[ 31 ]
+// expected OUT_MBR[ 7 ]
 initial
 begin
-	ADDRESS_expected[31] = 1'bX;
+	OUT_MBR_expected[7] = 1'bX;
 end 
-// expected ADDRESS[ 30 ]
+// expected OUT_MBR[ 6 ]
 initial
 begin
-	ADDRESS_expected[30] = 1'bX;
+	OUT_MBR_expected[6] = 1'bX;
 end 
-// expected ADDRESS[ 29 ]
+// expected OUT_MBR[ 5 ]
 initial
 begin
-	ADDRESS_expected[29] = 1'bX;
+	OUT_MBR_expected[5] = 1'bX;
 end 
-// expected ADDRESS[ 28 ]
+// expected OUT_MBR[ 4 ]
 initial
 begin
-	ADDRESS_expected[28] = 1'bX;
+	OUT_MBR_expected[4] = 1'bX;
 end 
-// expected ADDRESS[ 27 ]
+// expected OUT_MBR[ 3 ]
 initial
 begin
-	ADDRESS_expected[27] = 1'bX;
+	OUT_MBR_expected[3] = 1'bX;
 end 
-// expected ADDRESS[ 26 ]
+// expected OUT_MBR[ 2 ]
 initial
 begin
-	ADDRESS_expected[26] = 1'bX;
+	OUT_MBR_expected[2] = 1'bX;
 end 
-// expected ADDRESS[ 25 ]
+// expected OUT_MBR[ 1 ]
 initial
 begin
-	ADDRESS_expected[25] = 1'bX;
+	OUT_MBR_expected[1] = 1'bX;
 end 
-// expected ADDRESS[ 24 ]
+// expected OUT_MBR[ 0 ]
 initial
 begin
-	ADDRESS_expected[24] = 1'bX;
-end 
-// expected ADDRESS[ 23 ]
-initial
-begin
-	ADDRESS_expected[23] = 1'bX;
-end 
-// expected ADDRESS[ 22 ]
-initial
-begin
-	ADDRESS_expected[22] = 1'bX;
-end 
-// expected ADDRESS[ 21 ]
-initial
-begin
-	ADDRESS_expected[21] = 1'bX;
-end 
-// expected ADDRESS[ 20 ]
-initial
-begin
-	ADDRESS_expected[20] = 1'bX;
-end 
-// expected ADDRESS[ 19 ]
-initial
-begin
-	ADDRESS_expected[19] = 1'bX;
-end 
-// expected ADDRESS[ 18 ]
-initial
-begin
-	ADDRESS_expected[18] = 1'bX;
-end 
-// expected ADDRESS[ 17 ]
-initial
-begin
-	ADDRESS_expected[17] = 1'bX;
-end 
-// expected ADDRESS[ 16 ]
-initial
-begin
-	ADDRESS_expected[16] = 1'bX;
-end 
-// expected ADDRESS[ 15 ]
-initial
-begin
-	ADDRESS_expected[15] = 1'bX;
-end 
-// expected ADDRESS[ 14 ]
-initial
-begin
-	ADDRESS_expected[14] = 1'bX;
-end 
-// expected ADDRESS[ 13 ]
-initial
-begin
-	ADDRESS_expected[13] = 1'bX;
-end 
-// expected ADDRESS[ 12 ]
-initial
-begin
-	ADDRESS_expected[12] = 1'bX;
-end 
-// expected ADDRESS[ 11 ]
-initial
-begin
-	ADDRESS_expected[11] = 1'bX;
-end 
-// expected ADDRESS[ 10 ]
-initial
-begin
-	ADDRESS_expected[10] = 1'bX;
-end 
-// expected ADDRESS[ 9 ]
-initial
-begin
-	ADDRESS_expected[9] = 1'bX;
-end 
-// expected ADDRESS[ 8 ]
-initial
-begin
-	ADDRESS_expected[8] = 1'bX;
-end 
-// expected ADDRESS[ 7 ]
-initial
-begin
-	ADDRESS_expected[7] = 1'bX;
-end 
-// expected ADDRESS[ 6 ]
-initial
-begin
-	ADDRESS_expected[6] = 1'bX;
-end 
-// expected ADDRESS[ 5 ]
-initial
-begin
-	ADDRESS_expected[5] = 1'bX;
-end 
-// expected ADDRESS[ 4 ]
-initial
-begin
-	ADDRESS_expected[4] = 1'bX;
-end 
-// expected ADDRESS[ 3 ]
-initial
-begin
-	ADDRESS_expected[3] = 1'bX;
-end 
-// expected ADDRESS[ 2 ]
-initial
-begin
-	ADDRESS_expected[2] = 1'bX;
-end 
-// expected ADDRESS[ 1 ]
-initial
-begin
-	ADDRESS_expected[1] = 1'bX;
-end 
-// expected ADDRESS[ 0 ]
-initial
-begin
-	ADDRESS_expected[0] = 1'bX;
+	OUT_MBR_expected[0] = 1'bX;
 end 
 // expected OUT_MEM[ 31 ]
 initial
@@ -652,45 +532,165 @@ initial
 begin
 	PC_expected[0] = 1'bX;
 end 
-// expected OUT_MBR[ 7 ]
+// expected ADDRESS[ 31 ]
 initial
 begin
-	OUT_MBR_expected[7] = 1'bX;
+	ADDRESS_expected[31] = 1'bX;
 end 
-// expected OUT_MBR[ 6 ]
+// expected ADDRESS[ 30 ]
 initial
 begin
-	OUT_MBR_expected[6] = 1'bX;
+	ADDRESS_expected[30] = 1'bX;
 end 
-// expected OUT_MBR[ 5 ]
+// expected ADDRESS[ 29 ]
 initial
 begin
-	OUT_MBR_expected[5] = 1'bX;
+	ADDRESS_expected[29] = 1'bX;
 end 
-// expected OUT_MBR[ 4 ]
+// expected ADDRESS[ 28 ]
 initial
 begin
-	OUT_MBR_expected[4] = 1'bX;
+	ADDRESS_expected[28] = 1'bX;
 end 
-// expected OUT_MBR[ 3 ]
+// expected ADDRESS[ 27 ]
 initial
 begin
-	OUT_MBR_expected[3] = 1'bX;
+	ADDRESS_expected[27] = 1'bX;
 end 
-// expected OUT_MBR[ 2 ]
+// expected ADDRESS[ 26 ]
 initial
 begin
-	OUT_MBR_expected[2] = 1'bX;
+	ADDRESS_expected[26] = 1'bX;
 end 
-// expected OUT_MBR[ 1 ]
+// expected ADDRESS[ 25 ]
 initial
 begin
-	OUT_MBR_expected[1] = 1'bX;
+	ADDRESS_expected[25] = 1'bX;
 end 
-// expected OUT_MBR[ 0 ]
+// expected ADDRESS[ 24 ]
 initial
 begin
-	OUT_MBR_expected[0] = 1'bX;
+	ADDRESS_expected[24] = 1'bX;
+end 
+// expected ADDRESS[ 23 ]
+initial
+begin
+	ADDRESS_expected[23] = 1'bX;
+end 
+// expected ADDRESS[ 22 ]
+initial
+begin
+	ADDRESS_expected[22] = 1'bX;
+end 
+// expected ADDRESS[ 21 ]
+initial
+begin
+	ADDRESS_expected[21] = 1'bX;
+end 
+// expected ADDRESS[ 20 ]
+initial
+begin
+	ADDRESS_expected[20] = 1'bX;
+end 
+// expected ADDRESS[ 19 ]
+initial
+begin
+	ADDRESS_expected[19] = 1'bX;
+end 
+// expected ADDRESS[ 18 ]
+initial
+begin
+	ADDRESS_expected[18] = 1'bX;
+end 
+// expected ADDRESS[ 17 ]
+initial
+begin
+	ADDRESS_expected[17] = 1'bX;
+end 
+// expected ADDRESS[ 16 ]
+initial
+begin
+	ADDRESS_expected[16] = 1'bX;
+end 
+// expected ADDRESS[ 15 ]
+initial
+begin
+	ADDRESS_expected[15] = 1'bX;
+end 
+// expected ADDRESS[ 14 ]
+initial
+begin
+	ADDRESS_expected[14] = 1'bX;
+end 
+// expected ADDRESS[ 13 ]
+initial
+begin
+	ADDRESS_expected[13] = 1'bX;
+end 
+// expected ADDRESS[ 12 ]
+initial
+begin
+	ADDRESS_expected[12] = 1'bX;
+end 
+// expected ADDRESS[ 11 ]
+initial
+begin
+	ADDRESS_expected[11] = 1'bX;
+end 
+// expected ADDRESS[ 10 ]
+initial
+begin
+	ADDRESS_expected[10] = 1'bX;
+end 
+// expected ADDRESS[ 9 ]
+initial
+begin
+	ADDRESS_expected[9] = 1'bX;
+end 
+// expected ADDRESS[ 8 ]
+initial
+begin
+	ADDRESS_expected[8] = 1'bX;
+end 
+// expected ADDRESS[ 7 ]
+initial
+begin
+	ADDRESS_expected[7] = 1'bX;
+end 
+// expected ADDRESS[ 6 ]
+initial
+begin
+	ADDRESS_expected[6] = 1'bX;
+end 
+// expected ADDRESS[ 5 ]
+initial
+begin
+	ADDRESS_expected[5] = 1'bX;
+end 
+// expected ADDRESS[ 4 ]
+initial
+begin
+	ADDRESS_expected[4] = 1'bX;
+end 
+// expected ADDRESS[ 3 ]
+initial
+begin
+	ADDRESS_expected[3] = 1'bX;
+end 
+// expected ADDRESS[ 2 ]
+initial
+begin
+	ADDRESS_expected[2] = 1'bX;
+end 
+// expected ADDRESS[ 1 ]
+initial
+begin
+	ADDRESS_expected[1] = 1'bX;
+end 
+// expected ADDRESS[ 0 ]
+initial
+begin
+	ADDRESS_expected[0] = 1'bX;
 end 
 // expected A[ 31 ]
 initial
@@ -3953,15 +3953,15 @@ end
 initial
 begin
 	MIR[21] = 1'b0;
-	MIR[21] = #100000 1'b1;
-	MIR[21] = #1400000 1'b0;
+	MIR[21] = #500000 1'b1;
+	MIR[21] = #1000000 1'b0;
 end 
 // MIR[ 20 ]
 initial
 begin
 	MIR[20] = 1'b0;
-	MIR[20] = #100000 1'b1;
-	MIR[20] = #1400000 1'b0;
+	MIR[20] = #500000 1'b1;
+	MIR[20] = #1000000 1'b0;
 end 
 // MIR[ 19 ]
 initial
@@ -3974,8 +3974,8 @@ end
 initial
 begin
 	MIR[18] = 1'b0;
-	MIR[18] = #100000 1'b1;
-	MIR[18] = #1400000 1'b0;
+	MIR[18] = #500000 1'b1;
+	MIR[18] = #1000000 1'b0;
 end 
 // MIR[ 17 ]
 initial
@@ -3986,8 +3986,8 @@ end
 initial
 begin
 	MIR[16] = 1'b0;
-	MIR[16] = #100000 1'b1;
-	MIR[16] = #900000 1'b0;
+	MIR[16] = #500000 1'b1;
+	MIR[16] = #500000 1'b0;
 end 
 // MIR[ 15 ]
 initial
@@ -4028,31 +4028,25 @@ end
 initial
 begin
 	MIR[10] = 1'b0;
-	MIR[10] = #400000 1'b1;
-	MIR[10] = #100000 1'b0;
 end 
 // MIR[ 9 ]
 initial
 begin
 	MIR[9] = 1'b0;
-	MIR[9] = #100000 1'b1;
-	MIR[9] = #900000 1'b0;
+	MIR[9] = #500000 1'b1;
+	MIR[9] = #500000 1'b0;
 end 
 // MIR[ 8 ]
 initial
 begin
 	MIR[8] = 1'b0;
-	MIR[8] = #300000 1'b1;
-	MIR[8] = #100000 1'b0;
-	MIR[8] = #600000 1'b1;
+	MIR[8] = #1000000 1'b1;
 	MIR[8] = #500000 1'b0;
 end 
 // MIR[ 7 ]
 initial
 begin
 	MIR[7] = 1'b0;
-	MIR[7] = #200000 1'b1;
-	MIR[7] = #100000 1'b0;
 end 
 // MIR[ 6 ]
 initial
@@ -4063,11 +4057,15 @@ end
 initial
 begin
 	MIR[5] = 1'b0;
+	MIR[5] = #100000 1'b1;
+	MIR[5] = #100000 1'b0;
 end 
 // MIR[ 4 ]
 initial
 begin
 	MIR[4] = 1'b0;
+	MIR[4] = #400000 1'b1;
+	MIR[4] = #100000 1'b0;
 end 
 // MIR[ 3 ]
 initial
@@ -4094,8 +4092,8 @@ end
 initial
 begin
 	MIR[0] = 1'b0;
-	MIR[0] = #100000 1'b1;
-	MIR[0] = #900000 1'b0;
+	MIR[0] = #500000 1'b1;
+	MIR[0] = #500000 1'b0;
 	MIR[0] = #100000 1'b1;
 	MIR[0] = #100000 1'b0;
 	MIR[0] = #100000 1'b1;
@@ -4124,7 +4122,7 @@ end
 // IN_MBR[ 6 ]
 initial
 begin
-	IN_MBR[6] = 1'b0;
+	IN_MBR[6] = 1'b1;
 end 
 // IN_MBR[ 5 ]
 initial
@@ -4134,12 +4132,12 @@ end
 // IN_MBR[ 4 ]
 initial
 begin
-	IN_MBR[4] = 1'b0;
+	IN_MBR[4] = 1'b1;
 end 
 // IN_MBR[ 3 ]
 initial
 begin
-	IN_MBR[3] = 1'b0;
+	IN_MBR[3] = 1'b1;
 end 
 // IN_MBR[ 2 ]
 initial
@@ -4149,172 +4147,204 @@ end
 // IN_MBR[ 1 ]
 initial
 begin
-	IN_MBR[1] = 1'b0;
+	IN_MBR[1] = 1'b1;
 end 
 // IN_MBR[ 0 ]
 initial
 begin
 	IN_MBR[0] = 1'b0;
 end 
-// IN_MEM[ 31 ]
+
+// IN_MEM[31]
 initial
 begin
-	IN_MEM[31] = 1'b0;
+	IN_MEM[31] = 1'b1;
 end 
-// IN_MEM[ 30 ]
+
+// IN_MEM[30]
 initial
 begin
-	IN_MEM[30] = 1'b0;
+	IN_MEM[30] = 1'b1;
 end 
-// IN_MEM[ 29 ]
+
+// IN_MEM[29]
 initial
 begin
-	IN_MEM[29] = 1'b0;
+	IN_MEM[29] = 1'b1;
 end 
-// IN_MEM[ 28 ]
+
+// IN_MEM[28]
 initial
 begin
-	IN_MEM[28] = 1'b0;
+	IN_MEM[28] = 1'b1;
 end 
-// IN_MEM[ 27 ]
+
+// IN_MEM[27]
 initial
 begin
 	IN_MEM[27] = 1'b0;
 end 
-// IN_MEM[ 26 ]
+
+// IN_MEM[26]
 initial
 begin
 	IN_MEM[26] = 1'b0;
 end 
-// IN_MEM[ 25 ]
+
+// IN_MEM[25]
 initial
 begin
 	IN_MEM[25] = 1'b0;
 end 
-// IN_MEM[ 24 ]
+
+// IN_MEM[24]
 initial
 begin
 	IN_MEM[24] = 1'b0;
 end 
-// IN_MEM[ 23 ]
+
+// IN_MEM[23]
 initial
 begin
-	IN_MEM[23] = 1'b0;
+	IN_MEM[23] = 1'b1;
 end 
-// IN_MEM[ 22 ]
+
+// IN_MEM[22]
 initial
 begin
 	IN_MEM[22] = 1'b0;
 end 
-// IN_MEM[ 21 ]
+
+// IN_MEM[21]
 initial
 begin
-	IN_MEM[21] = 1'b0;
+	IN_MEM[21] = 1'b1;
 end 
-// IN_MEM[ 20 ]
+
+// IN_MEM[20]
 initial
 begin
 	IN_MEM[20] = 1'b0;
 end 
-// IN_MEM[ 19 ]
+
+// IN_MEM[19]
 initial
 begin
 	IN_MEM[19] = 1'b0;
 end 
-// IN_MEM[ 18 ]
+
+// IN_MEM[18]
 initial
 begin
-	IN_MEM[18] = 1'b0;
+	IN_MEM[18] = 1'b1;
 end 
-// IN_MEM[ 17 ]
+
+// IN_MEM[17]
 initial
 begin
 	IN_MEM[17] = 1'b0;
 end 
-// IN_MEM[ 16 ]
+
+// IN_MEM[16]
 initial
 begin
-	IN_MEM[16] = 1'b0;
+	IN_MEM[16] = 1'b1;
 end 
-// IN_MEM[ 15 ]
+
+// IN_MEM[15]
 initial
 begin
 	IN_MEM[15] = 1'b0;
 end 
-// IN_MEM[ 14 ]
+
+// IN_MEM[14]
 initial
 begin
 	IN_MEM[14] = 1'b0;
 end 
-// IN_MEM[ 13 ]
+
+// IN_MEM[13]
 initial
 begin
-	IN_MEM[13] = 1'b0;
+	IN_MEM[13] = 1'b1;
 end 
-// IN_MEM[ 12 ]
+
+// IN_MEM[12]
 initial
 begin
-	IN_MEM[12] = 1'b0;
+	IN_MEM[12] = 1'b1;
 end 
-// IN_MEM[ 11 ]
+
+// IN_MEM[11]
 initial
 begin
-	IN_MEM[11] = 1'b0;
+	IN_MEM[11] = 1'b1;
 end 
-// IN_MEM[ 10 ]
+
+// IN_MEM[10]
 initial
 begin
-	IN_MEM[10] = 1'b0;
+	IN_MEM[10] = 1'b1;
 end 
-// IN_MEM[ 9 ]
+
+// IN_MEM[9]
 initial
 begin
 	IN_MEM[9] = 1'b0;
 end 
-// IN_MEM[ 8 ]
+
+// IN_MEM[8]
 initial
 begin
 	IN_MEM[8] = 1'b0;
 end 
-// IN_MEM[ 7 ]
+
+// IN_MEM[7]
 initial
 begin
 	IN_MEM[7] = 1'b0;
 end 
-// IN_MEM[ 6 ]
+
+// IN_MEM[6]
 initial
 begin
 	IN_MEM[6] = 1'b0;
 end 
-// IN_MEM[ 5 ]
+
+// IN_MEM[5]
 initial
 begin
 	IN_MEM[5] = 1'b0;
 end 
-// IN_MEM[ 4 ]
+
+// IN_MEM[4]
 initial
 begin
 	IN_MEM[4] = 1'b0;
 end 
-// IN_MEM[ 3 ]
+
+// IN_MEM[3]
 initial
 begin
-	IN_MEM[3] = 1'b0;
+	IN_MEM[3] = 1'b1;
 end 
-// IN_MEM[ 2 ]
+
+// IN_MEM[2]
 initial
 begin
-	IN_MEM[2] = 1'b0;
+	IN_MEM[2] = 1'b1;
 end 
-// IN_MEM[ 1 ]
+
+// IN_MEM[1]
 initial
 begin
-	IN_MEM[1] = 1'b0;
+	IN_MEM[1] = 1'b1;
 end 
-// IN_MEM[ 0 ]
+
+// IN_MEM[0]
 initial
 begin
-	IN_MEM[0] = 1'b0;
+	IN_MEM[0] = 1'b1;
 end 
 
 DATAPATH_vlg_sample_tst tb_sample (

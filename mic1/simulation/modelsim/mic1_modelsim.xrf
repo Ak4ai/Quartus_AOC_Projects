@@ -1,4 +1,5 @@
 vendor_name = ModelSim
+source_file = 1, C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/DATAPATH_test_files/DATAPATH_PORTAS.vwf
 source_file = 1, C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/REGISTER32bit.vwf
 source_file = 1, C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/DATAPATH_test_files/DATAPATH test microcode.txt
 source_file = 1, C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/decoder2to4.bdf
@@ -52,6 +53,7 @@ source_file = 1, C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/DA
 source_file = 1, C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/DATAPATH_test_files/DATAPATH3.vwf
 source_file = 1, C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/H.vwf
 source_file = 1, C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/REGISTER8bit.bdf
+source_file = 1, C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/CPU.bdf
 source_file = 1, C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/db/mic1.cbx.xml
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
