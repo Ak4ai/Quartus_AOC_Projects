@@ -1,0 +1,6 @@
+
+
+C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/control_store.vhd
+
+Nov 08 02PM:55:00>: File C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/control_store.vhd does not exist.
+Do you want to create the file?
