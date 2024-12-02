@@ -1,0 +1,88 @@
+-- Copyright (C) 1991-2013 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+WIDTH=36;
+DEPTH=512;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	000  :   002000000;
+	001  :   000000000;
+	002  :   004350211;
+	[003..012]  :   000000000;
+	013  :   098350211;
+	014  :   0A0948003;
+	015  :   000000000;
+	016  :   0B01C8003;
+	017  :   1C03C00A6;
+	[018..03A]  :   000000000;
+	03B  :   338350484;
+	03C  :   3083604A4;
+	03D  :   310148007;
+	03E  :   0103C2140;
+	03F  :   000000000;
+	040  :   3283604A4;
+	041  :   328148007;
+	042  :   010002140;
+	[043..07D]  :   000000000;
+	07E  :   3083604A4;
+	07F  :   3F8148007;
+	080  :   3F83604A4;
+	081  :   408148007;
+	[082..083]  :   0101C2140;
+	084  :   420148005;
+	085  :   4283C00A3;
+	086  :   430350211;
+	087  :   438148000;
+	088  :   440350211;
+	089  :   0103C0142;
+	[08A..0AB]  :   000000000;
+	0AC  :   5601404A5;
+	0AD  :   568000000;
+	0AE  :   5701408A0;
+	0AF  :   578350085;
+	0B0  :   580140230;
+	0B1  :   588140084;
+	0B2  :   590140800;
+	0B3  :   010140147;
+	[0B4..0B5]  :   000000000;
+	0B6  :   5B0350211;
+	0B7  :   5B8948003;
+	0B8  :   5C01C8003;
+	0B9  :   5C83C00A6;
+	0BA  :   5D0354001;
+	0BB  :   5D8140210;
+	0BC  :   5E0350211;
+	0BD  :   5E8948003;
+	0BE  :   5F01C8003;
+	0BF  :   5F8350211;
+	0C0  :   6003F2004;
+	0C1  :   608352087;
+	0C2  :   610350211;
+	0C3  :   618948003;
+	0C4  :   000000000;
+	0C5  :   6281C8003;
+	0C6  :   6303D0144;
+	0C7  :   638000588;
+	0C8  :   640004148;
+	0C9  :   648350484;
+	0CA  :   650000948;
+	0CB  :   658350211;
+	0CC  :   000002808;
+	[0CD..1FF]  :   000000000;
+END;
