@@ -20,21 +20,21 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 248 144)
+	(rect 16 16 240 144)
 	(text "MAR" (rect 5 0 32 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "CLOCK" (rect 0 0 41 14)(font "Arial" (font_size 8)))
-		(text "CLOCK" (rect 21 27 62 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
+		(text "MIR[35..0]" (rect 0 0 55 14)(font "Arial" (font_size 8)))
+		(text "MIR[35..0]" (rect 21 27 76 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "MIR[35..0]" (rect 0 0 55 14)(font "Arial" (font_size 8)))
-		(text "MIR[35..0]" (rect 21 43 76 57)(font "Arial" (font_size 8)))
+		(text "IN_C[31..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "IN_C[31..0]" (rect 21 43 82 57)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
@@ -47,18 +47,18 @@ applicable agreement for further details.
 	(port
 		(pt 0 80)
 		(input)
-		(text "INPUT[31..0]" (rect 0 0 68 14)(font "Arial" (font_size 8)))
-		(text "INPUT[31..0]" (rect 21 75 89 89)(font "Arial" (font_size 8)))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
+		(text "CLOCK" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "CLOCK" (rect 21 75 62 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
 	)
 	(port
-		(pt 232 32)
+		(pt 224 32)
 		(output)
 		(text "DATA_ADDR[31..0]" (rect 0 0 110 14)(font "Arial" (font_size 8)))
-		(text "DATA_ADDR[31..0]" (rect 101 27 211 41)(font "Arial" (font_size 8)))
-		(line (pt 232 32)(pt 216 32)(line_width 3))
+		(text "DATA_ADDR[31..0]" (rect 93 27 203 41)(font "Arial" (font_size 8)))
+		(line (pt 224 32)(pt 208 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 216 112))
+		(rectangle (rect 16 16 208 112))
 	)
 )

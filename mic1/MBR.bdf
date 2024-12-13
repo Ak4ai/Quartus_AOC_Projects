@@ -904,12 +904,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "MBRU_OUT[31..0]" (rect -30 128 62 140)(font "Arial" ))
-	(pt 200 144)
-	(pt -40 144)
-	(bus)
-)
-(connector
 	(pt -256 112)
 	(pt -256 72)
 	(bus)
@@ -982,12 +976,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "MBR_OUT[31..0]" (rect -16 104 67 116)(font "Arial" ))
-	(pt -40 120)
-	(pt 208 120)
-	(bus)
-)
-(connector
 	(pt 168 248)
 	(pt 168 56)
 )
@@ -1014,9 +1002,20 @@ applicable agreement for further details.
 	(pt 216 368)
 	(bus)
 )
+(connector
+	(text "MBR_OUT[31..0]" (rect -30 128 53 140)(font "Arial" ))
+	(pt 200 144)
+	(pt -40 144)
+	(bus)
+)
+(connector
+	(text "MBRU_OUT[31..0]" (rect -16 104 76 116)(font "Arial" ))
+	(pt -40 120)
+	(pt 208 120)
+	(bus)
+)
 (junction (pt 768 288))
 (junction (pt 248 152))
 (junction (pt 248 336))
 (junction (pt 216 184))
 (junction (pt -256 112))
-(text "OUTPUT_MEM[31..0]" (rect 771 304 876 316)(font "Arial" ))

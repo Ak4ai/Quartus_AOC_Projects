@@ -197,7 +197,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 320 216 496 232)
+	(rect 328 216 504 232)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "ADDRESS[31..0]" (rect 90 0 174 12)(font "Arial" ))
 	(pt 0 8)
@@ -246,7 +246,7 @@ applicable agreement for further details.
 (symbol
 	(rect 88 192 312 352)
 	(text "BANK_REG" (rect 5 0 71 14)(font "Arial" (font_size 8)))
-	(text "inst2" (rect 8 144 31 156)(font "Arial" ))
+	(text "inst7" (rect 8 144 31 156)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -387,75 +387,6 @@ applicable agreement for further details.
 	(flipx)
 )
 (connector
-	(pt 72 256)
-	(pt 88 256)
-)
-(connector
-	(pt 72 272)
-	(pt 88 272)
-)
-(connector
-	(pt 72 288)
-	(pt 88 288)
-	(bus)
-)
-(connector
-	(pt 320 224)
-	(pt 312 224)
-	(bus)
-)
-(connector
-	(pt 320 288)
-	(pt 312 288)
-	(bus)
-)
-(connector
-	(pt 320 272)
-	(pt 312 272)
-	(bus)
-)
-(connector
-	(pt 320 256)
-	(pt 312 256)
-	(bus)
-)
-(connector
-	(pt 312 304)
-	(pt 504 304)
-	(bus)
-)
-(connector
-	(pt 504 304)
-	(pt 504 280)
-	(bus)
-)
-(connector
-	(text "MIR[35..0]" (rect 544 280 595 292)(font "Arial" ))
-	(pt 592 296)
-	(pt 536 296)
-	(bus)
-)
-(connector
-	(pt 312 240)
-	(pt 504 240)
-	(bus)
-)
-(connector
-	(pt 504 240)
-	(pt 504 264)
-	(bus)
-)
-(connector
-	(pt 88 224)
-	(pt 80 224)
-	(bus)
-)
-(connector
-	(pt 80 224)
-	(pt 80 184)
-	(bus)
-)
-(connector
 	(pt 800 184)
 	(pt 800 296)
 	(bus)
@@ -481,16 +412,6 @@ applicable agreement for further details.
 (connector
 	(pt 584 360)
 	(pt 616 360)
-	(bus)
-)
-(connector
-	(pt 80 184)
-	(pt 584 184)
-	(bus)
-)
-(connector
-	(pt 584 184)
-	(pt 800 184)
 	(bus)
 )
 (connector
@@ -534,13 +455,92 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
+	(text "MIR[35..0]" (rect 520 280 571 292)(font "Arial" ))
+	(pt 592 296)
+	(pt 512 296)
+	(bus)
+)
+(connector
+	(pt 320 256)
+	(pt 312 256)
+	(bus)
+)
+(connector
+	(pt 320 272)
+	(pt 312 272)
+	(bus)
+)
+(connector
+	(pt 320 288)
+	(pt 312 288)
+	(bus)
+)
+(connector
+	(pt 504 280)
+	(pt 504 304)
+	(bus)
+)
+(connector
+	(pt 504 264)
+	(pt 504 240)
+	(bus)
+)
+(connector
 	(pt 72 240)
 	(pt 88 240)
 	(bus)
 )
 (connector
+	(pt 72 256)
+	(pt 88 256)
+)
+(connector
+	(pt 72 272)
+	(pt 88 272)
+)
+(connector
+	(pt 72 288)
+	(pt 88 288)
+	(bus)
+)
+(connector
 	(pt 72 304)
 	(pt 88 304)
+	(bus)
+)
+(connector
+	(pt 312 224)
+	(pt 328 224)
+	(bus)
+)
+(connector
+	(pt 312 240)
+	(pt 504 240)
+	(bus)
+)
+(connector
+	(pt 312 304)
+	(pt 504 304)
+	(bus)
+)
+(connector
+	(pt 56 184)
+	(pt 56 224)
+	(bus)
+)
+(connector
+	(pt 88 224)
+	(pt 56 224)
+	(bus)
+)
+(connector
+	(pt 56 184)
+	(pt 584 184)
+	(bus)
+)
+(connector
+	(pt 584 184)
+	(pt 800 184)
 	(bus)
 )
 (junction (pt 584 184))

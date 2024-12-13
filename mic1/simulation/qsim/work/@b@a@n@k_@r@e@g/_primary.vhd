@@ -3,8 +3,8 @@ use verilog.vl_types.all;
 entity BANK_REG is
     port(
         MAR             : out    vl_logic_vector(31 downto 0);
-        CLOCK           : in     vl_logic;
         LOAD            : in     vl_logic;
+        CLOCK           : in     vl_logic;
         IN_C            : in     vl_logic_vector(31 downto 0);
         MIR             : in     vl_logic_vector(35 downto 0);
         MBR_OUT         : out    vl_logic_vector(7 downto 0);
