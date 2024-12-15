@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mic1
-Fri Dec 13 18:20:35 2024
+Sun Dec 15 17:01:41 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -49,13 +49,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 13 18:20:35 2024           ;
+; Analysis & Synthesis Status        ; Successful - Sun Dec 15 17:01:41 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; mic1                                            ;
 ; Top-level Entity Name              ; CPU                                             ;
 ; Family                             ; Cyclone II                                      ;
 ; Total logic elements               ; 712                                             ;
-;     Total combinational functions  ; 442                                             ;
+;     Total combinational functions  ; 441                                             ;
 ;     Dedicated logic registers      ; 317                                             ;
 ; Total registers                    ; 317                                             ;
 ; Total pins                         ; 192                                             ;
@@ -215,14 +215,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Estimated Total logic elements              ; 712   ;
 ;                                             ;       ;
-; Total combinational functions               ; 442   ;
+; Total combinational functions               ; 441   ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 328   ;
 ;     -- 3 input functions                    ; 93    ;
-;     -- <=2 input functions                  ; 21    ;
+;     -- <=2 input functions                  ; 20    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 442   ;
+;     -- normal mode                          ; 441   ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
 ; Total registers                             ; 317   ;
@@ -234,8 +234,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; LOADN ;
 ; Maximum fan-out                             ; 304   ;
-; Total fan-out                               ; 3122  ;
-; Average fan-out                             ; 3.16  ;
+; Total fan-out                               ; 3121  ;
+; Average fan-out                             ; 3.17  ;
 +---------------------------------------------+-------+
 
 
@@ -244,14 +244,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                              ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------+--------------+
-; |CPU                                         ; 442 (0)           ; 317 (0)      ; 18432       ; 0            ; 0       ; 0         ; 192  ; 0            ; |CPU                                                                                                             ; work         ;
+; |CPU                                         ; 441 (0)           ; 317 (0)      ; 18432       ; 0            ; 0       ; 0         ; 192  ; 0            ; |CPU                                                                                                             ; work         ;
 ;    |CONTROL_UNIT:inst1|                      ; 10 (0)            ; 11 (9)       ; 18432       ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|CONTROL_UNIT:inst1                                                                                          ; work         ;
 ;       |MPC_GENERATOR:inst|                   ; 10 (10)           ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|CONTROL_UNIT:inst1|MPC_GENERATOR:inst                                                                       ; work         ;
 ;       |control_store:inst1|                  ; 0 (0)             ; 0 (0)        ; 18432       ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|CONTROL_UNIT:inst1|control_store:inst1                                                                      ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 18432       ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|CONTROL_UNIT:inst1|control_store:inst1|altsyncram:altsyncram_component                                      ; work         ;
 ;             |altsyncram_55a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 18432       ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|CONTROL_UNIT:inst1|control_store:inst1|altsyncram:altsyncram_component|altsyncram_55a1:auto_generated       ; work         ;
-;    |DATAPATH:inst2|                          ; 432 (0)           ; 306 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2                                                                                              ; work         ;
-;       |BANK_REG:inst1|                       ; 196 (146)         ; 306 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2|BANK_REG:inst1                                                                               ; work         ;
+;    |DATAPATH:inst2|                          ; 431 (0)           ; 306 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2                                                                                              ; work         ;
+;       |BANK_REG:inst1|                       ; 195 (146)         ; 306 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2|BANK_REG:inst1                                                                               ; work         ;
 ;          |CPP:inst6|                         ; 2 (0)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2|BANK_REG:inst1|CPP:inst6                                                                     ; work         ;
 ;             |REGISTER32bit:inst|             ; 2 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2|BANK_REG:inst1|CPP:inst6|REGISTER32bit:inst                                                  ; work         ;
 ;                |REGISTER8bit:inst1|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2|BANK_REG:inst1|CPP:inst6|REGISTER32bit:inst|REGISTER8bit:inst1                               ; work         ;
@@ -264,12 +264,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                |REGISTER8bit:inst2|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2|BANK_REG:inst1|H:inst10|REGISTER32bit:inst|REGISTER8bit:inst2                                ; work         ;
 ;                |REGISTER8bit:inst3|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2|BANK_REG:inst1|H:inst10|REGISTER32bit:inst|REGISTER8bit:inst3                                ; work         ;
 ;                |REGISTER8bit:inst|           ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2|BANK_REG:inst1|H:inst10|REGISTER32bit:inst|REGISTER8bit:inst                                 ; work         ;
-;          |LV:inst2|                          ; 3 (0)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2|BANK_REG:inst1|LV:inst2                                                                      ; work         ;
-;             |REGISTER32bit:inst1|            ; 3 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2|BANK_REG:inst1|LV:inst2|REGISTER32bit:inst1                                                  ; work         ;
+;          |LV:inst2|                          ; 2 (0)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2|BANK_REG:inst1|LV:inst2                                                                      ; work         ;
+;             |REGISTER32bit:inst1|            ; 2 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2|BANK_REG:inst1|LV:inst2|REGISTER32bit:inst1                                                  ; work         ;
 ;                |REGISTER8bit:inst1|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2|BANK_REG:inst1|LV:inst2|REGISTER32bit:inst1|REGISTER8bit:inst1                               ; work         ;
 ;                |REGISTER8bit:inst2|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2|BANK_REG:inst1|LV:inst2|REGISTER32bit:inst1|REGISTER8bit:inst2                               ; work         ;
-;                |REGISTER8bit:inst3|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2|BANK_REG:inst1|LV:inst2|REGISTER32bit:inst1|REGISTER8bit:inst3                               ; work         ;
-;                |REGISTER8bit:inst|           ; 2 (2)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2|BANK_REG:inst1|LV:inst2|REGISTER32bit:inst1|REGISTER8bit:inst                                ; work         ;
+;                |REGISTER8bit:inst3|          ; 1 (1)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2|BANK_REG:inst1|LV:inst2|REGISTER32bit:inst1|REGISTER8bit:inst3                               ; work         ;
+;                |REGISTER8bit:inst|           ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2|BANK_REG:inst1|LV:inst2|REGISTER32bit:inst1|REGISTER8bit:inst                                ; work         ;
 ;          |MAR:inst|                          ; 1 (0)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2|BANK_REG:inst1|MAR:inst                                                                      ; work         ;
 ;             |REGISTER32bit:inst|             ; 1 (1)             ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2|BANK_REG:inst1|MAR:inst|REGISTER32bit:inst                                                   ; work         ;
 ;                |REGISTER8bit:inst1|          ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |CPU|DATAPATH:inst2|BANK_REG:inst1|MAR:inst|REGISTER32bit:inst|REGISTER8bit:inst1                                ; work         ;
@@ -546,10 +546,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------+---------+
 ; DATAPATH:inst2|BANK_REG:inst1|SP:inst1|REGISTER32bit:inst|REGISTER8bit:inst3|inst28 ; 1       ;
 ; DATAPATH:inst2|BANK_REG:inst1|SP:inst1|REGISTER32bit:inst|REGISTER8bit:inst3|inst16 ; 1       ;
-; DATAPATH:inst2|BANK_REG:inst1|LV:inst2|REGISTER32bit:inst1|REGISTER8bit:inst|inst28 ; 1       ;
+; DATAPATH:inst2|BANK_REG:inst1|LV:inst2|REGISTER32bit:inst1|REGISTER8bit:inst3|inst  ; 1       ;
 ; DATAPATH:inst2|BANK_REG:inst1|CPP:inst6|REGISTER32bit:inst|REGISTER8bit:inst|inst28 ; 1       ;
-; DATAPATH:inst2|BANK_REG:inst1|LV:inst2|REGISTER32bit:inst1|REGISTER8bit:inst|inst16 ; 1       ;
-; Total number of inverted registers = 5                                              ;         ;
+; Total number of inverted registers = 4                                              ;         ;
 +-------------------------------------------------------------------------------------+---------+
 
 
@@ -658,7 +657,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -668,7 +667,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Dec 13 18:20:33 2024
+    Info: Processing started: Sun Dec 15 17:01:37 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mic1 -c mic1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file shifter+ula.bdf
@@ -984,9 +983,9 @@ Info (21057): Implemented 972 device resources after synthesis - the final resou
     Info (21061): Implemented 744 logic cells
     Info (21064): Implemented 36 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 180 warnings
-    Info: Peak virtual memory: 4662 megabytes
-    Info: Processing ended: Fri Dec 13 18:20:35 2024
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4654 megabytes
+    Info: Processing ended: Sun Dec 15 17:01:41 2024
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:02
 
 

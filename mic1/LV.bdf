@@ -69,19 +69,19 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 312 544 480 560)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "MIR[35..0]" (rect 5 0 56 12)(font "Arial" ))
-	(pt 168 8)
+	(rect 312 552 488 568)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "MIR[35..0]" (rect 9 0 60 12)(font "Arial" ))
+	(pt 176 8)
 	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
 	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
@@ -294,7 +294,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 480 304 616 400)
+	(rect 392 304 528 400)
 	(text "LV_init" (rect 5 0 43 14)(font "Arial" (font_size 8)))
 	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
 	(port
@@ -321,11 +321,6 @@ applicable agreement for further details.
 	(text "IN_C[31..0]" (rect 488 424 545 436)(font "Arial" ))
 	(pt 488 440)
 	(pt 728 440)
-	(bus)
-)
-(connector
-	(pt 480 552)
-	(pt 512 552)
 	(bus)
 )
 (connector
@@ -358,16 +353,6 @@ applicable agreement for further details.
 (connector
 	(pt 632 504)
 	(pt 728 504)
-	(bus)
-)
-(connector
-	(pt 632 504)
-	(pt 632 336)
-	(bus)
-)
-(connector
-	(pt 632 336)
-	(pt 616 336)
 	(bus)
 )
 (connector
@@ -434,5 +419,20 @@ applicable agreement for further details.
 (connector
 	(pt 712 472)
 	(pt 728 472)
+)
+(connector
+	(pt 632 504)
+	(pt 632 336)
+	(bus)
+)
+(connector
+	(pt 528 336)
+	(pt 632 336)
+	(bus)
+)
+(connector
+	(pt 488 560)
+	(pt 528 560)
+	(bus)
 )
 (junction (pt 712 472))
