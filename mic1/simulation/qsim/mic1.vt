@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "12/15/2024 16:50:50"
+// Generated on "12/16/2024 09:07:24"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    CPU
 // 
@@ -304,16 +304,16 @@ end
 initial
 begin
 	PC_expected[2] = 1'b0;
-	PC_expected[2] = #690018 1'b1;
-	PC_expected[2] = #1100000 1'b0;
+	PC_expected[2] = #790018 1'b1;
+	PC_expected[2] = #1000000 1'b0;
 end 
 // expected PC[ 1 ]
 initial
 begin
 	PC_expected[1] = 1'b0;
 	PC_expected[1] = #390410 1'b1;
-	PC_expected[1] = #300000 1'b0;
-	PC_expected[1] = #700000 1'b1;
+	PC_expected[1] = #400000 1'b0;
+	PC_expected[1] = #600000 1'b1;
 	PC_expected[1] = #400000 1'b0;
 end 
 // expected PC[ 0 ]
@@ -322,18 +322,19 @@ begin
 	PC_expected[0] = 1'b0;
 	PC_expected[0] = #190544 1'b1;
 	PC_expected[0] = #200000 1'b0;
-	PC_expected[0] = #100000 1'b1;
-	PC_expected[0] = #200000 1'b0;
-	PC_expected[0] = #500000 1'b1;
-	PC_expected[0] = #200000 1'b0;
 	PC_expected[0] = #200000 1'b1;
 	PC_expected[0] = #200000 1'b0;
+	PC_expected[0] = #500000 1'b1;
+	PC_expected[0] = #100000 1'b0;
+	PC_expected[0] = #200000 1'b1;
+	PC_expected[0] = #200000 1'b0;
+	PC_expected[0] = #200000 1'b1;
 end 
 // expected DATA_MEM_ADDR[ 31 ]
 initial
 begin
 	DATA_MEM_ADDR_expected[31] = 1'b0;
-	DATA_MEM_ADDR_expected[31] = #994456 1'b1;
+	DATA_MEM_ADDR_expected[31] = #494456 1'b1;
 end 
 // expected DATA_MEM_ADDR[ 30 ]
 initial
@@ -414,15 +415,11 @@ end
 initial
 begin
 	DATA_MEM_ADDR_expected[15] = 1'b0;
-	DATA_MEM_ADDR_expected[15] = #995102 1'b1;
-	DATA_MEM_ADDR_expected[15] = #100000 1'b0;
 end 
 // expected DATA_MEM_ADDR[ 14 ]
 initial
 begin
 	DATA_MEM_ADDR_expected[14] = 1'b0;
-	DATA_MEM_ADDR_expected[14] = #994241 1'b1;
-	DATA_MEM_ADDR_expected[14] = #100000 1'b0;
 end 
 // expected DATA_MEM_ADDR[ 13 ]
 initial
@@ -443,15 +440,11 @@ end
 initial
 begin
 	DATA_MEM_ADDR_expected[10] = 1'b0;
-	DATA_MEM_ADDR_expected[10] = #994274 1'b1;
-	DATA_MEM_ADDR_expected[10] = #100000 1'b0;
 end 
 // expected DATA_MEM_ADDR[ 9 ]
 initial
 begin
 	DATA_MEM_ADDR_expected[9] = 1'b0;
-	DATA_MEM_ADDR_expected[9] = #994439 1'b1;
-	DATA_MEM_ADDR_expected[9] = #100000 1'b0;
 end 
 // expected DATA_MEM_ADDR[ 8 ]
 initial
@@ -462,8 +455,6 @@ end
 initial
 begin
 	DATA_MEM_ADDR_expected[7] = 1'b0;
-	DATA_MEM_ADDR_expected[7] = #994555 1'b1;
-	DATA_MEM_ADDR_expected[7] = #100000 1'b0;
 end 
 // expected DATA_MEM_ADDR[ 6 ]
 initial
@@ -474,8 +465,6 @@ end
 initial
 begin
 	DATA_MEM_ADDR_expected[5] = 1'b0;
-	DATA_MEM_ADDR_expected[5] = #994109 1'b1;
-	DATA_MEM_ADDR_expected[5] = #100000 1'b0;
 end 
 // expected DATA_MEM_ADDR[ 4 ]
 initial
@@ -491,8 +480,6 @@ end
 initial
 begin
 	DATA_MEM_ADDR_expected[2] = 1'b0;
-	DATA_MEM_ADDR_expected[2] = #994285 1'b1;
-	DATA_MEM_ADDR_expected[2] = #100000 1'b0;
 end 
 // expected DATA_MEM_ADDR[ 1 ]
 initial
@@ -503,13 +490,13 @@ end
 initial
 begin
 	DATA_MEM_ADDR_expected[0] = 1'b0;
-	DATA_MEM_ADDR_expected[0] = #994883 1'b1;
+	DATA_MEM_ADDR_expected[0] = #494883 1'b1;
+	DATA_MEM_ADDR_expected[0] = #400000 1'b0;
 end 
 // expected DATA_MEM_OUT[ 31 ]
 initial
 begin
 	DATA_MEM_OUT_expected[31] = 1'b0;
-	DATA_MEM_OUT_expected[31] = #1090640 1'b1;
 end 
 // expected DATA_MEM_OUT[ 30 ]
 initial
@@ -520,7 +507,6 @@ end
 initial
 begin
 	DATA_MEM_OUT_expected[29] = 1'b0;
-	DATA_MEM_OUT_expected[29] = #1090804 1'b1;
 end 
 // expected DATA_MEM_OUT[ 28 ]
 initial
@@ -536,7 +522,6 @@ end
 initial
 begin
 	DATA_MEM_OUT_expected[26] = 1'b0;
-	DATA_MEM_OUT_expected[26] = #1090323 1'b1;
 end 
 // expected DATA_MEM_OUT[ 25 ]
 initial
@@ -547,19 +532,16 @@ end
 initial
 begin
 	DATA_MEM_OUT_expected[24] = 1'b0;
-	DATA_MEM_OUT_expected[24] = #1090906 1'b1;
 end 
 // expected DATA_MEM_OUT[ 23 ]
 initial
 begin
 	DATA_MEM_OUT_expected[23] = 1'b0;
-	DATA_MEM_OUT_expected[23] = #1091721 1'b1;
 end 
 // expected DATA_MEM_OUT[ 22 ]
 initial
 begin
 	DATA_MEM_OUT_expected[22] = 1'b0;
-	DATA_MEM_OUT_expected[22] = #1090523 1'b1;
 end 
 // expected DATA_MEM_OUT[ 21 ]
 initial
@@ -580,13 +562,11 @@ end
 initial
 begin
 	DATA_MEM_OUT_expected[18] = 1'b0;
-	DATA_MEM_OUT_expected[18] = #1090540 1'b1;
 end 
 // expected DATA_MEM_OUT[ 17 ]
 initial
 begin
 	DATA_MEM_OUT_expected[17] = 1'b0;
-	DATA_MEM_OUT_expected[17] = #1091339 1'b1;
 end 
 // expected DATA_MEM_OUT[ 16 ]
 initial
@@ -597,25 +577,21 @@ end
 initial
 begin
 	DATA_MEM_OUT_expected[15] = 1'b0;
-	DATA_MEM_OUT_expected[15] = #1090612 1'b1;
 end 
 // expected DATA_MEM_OUT[ 14 ]
 initial
 begin
 	DATA_MEM_OUT_expected[14] = 1'b0;
-	DATA_MEM_OUT_expected[14] = #1090588 1'b1;
 end 
 // expected DATA_MEM_OUT[ 13 ]
 initial
 begin
 	DATA_MEM_OUT_expected[13] = 1'b0;
-	DATA_MEM_OUT_expected[13] = #1091029 1'b1;
 end 
 // expected DATA_MEM_OUT[ 12 ]
 initial
 begin
 	DATA_MEM_OUT_expected[12] = 1'b0;
-	DATA_MEM_OUT_expected[12] = #1090639 1'b1;
 end 
 // expected DATA_MEM_OUT[ 11 ]
 initial
@@ -646,24 +622,25 @@ end
 initial
 begin
 	DATA_MEM_OUT_expected[6] = 1'b0;
-	DATA_MEM_OUT_expected[6] = #1091021 1'b1;
 end 
 // expected DATA_MEM_OUT[ 5 ]
 initial
 begin
 	DATA_MEM_OUT_expected[5] = 1'b0;
+	DATA_MEM_OUT_expected[5] = #690399 1'b1;
+	DATA_MEM_OUT_expected[5] = #300000 1'b0;
 end 
 // expected DATA_MEM_OUT[ 4 ]
 initial
 begin
 	DATA_MEM_OUT_expected[4] = 1'b0;
-	DATA_MEM_OUT_expected[4] = #1090372 1'b1;
 end 
 // expected DATA_MEM_OUT[ 3 ]
 initial
 begin
 	DATA_MEM_OUT_expected[3] = 1'b0;
-	DATA_MEM_OUT_expected[3] = #1090411 1'b1;
+	DATA_MEM_OUT_expected[3] = #690411 1'b1;
+	DATA_MEM_OUT_expected[3] = #300000 1'b0;
 end 
 // expected DATA_MEM_OUT[ 2 ]
 initial
@@ -674,7 +651,8 @@ end
 initial
 begin
 	DATA_MEM_OUT_expected[1] = 1'b0;
-	DATA_MEM_OUT_expected[1] = #1090623 1'b1;
+	DATA_MEM_OUT_expected[1] = #690623 1'b1;
+	DATA_MEM_OUT_expected[1] = #300000 1'b0;
 end 
 // expected DATA_MEM_OUT[ 0 ]
 initial
@@ -685,82 +663,78 @@ end
 initial
 begin
 	MBR_OUT_expected[7] = 1'b0;
-	MBR_OUT_expected[7] = #288328 1'b1;
-	MBR_OUT_expected[7] = #200000 1'b0;
-	MBR_OUT_expected[7] = #100000 1'b1;
-	MBR_OUT_expected[7] = #700000 1'b0;
+	MBR_OUT_expected[7] = #688328 1'b1;
+	MBR_OUT_expected[7] = #800000 1'b0;
 end 
 // expected MBR_OUT[ 6 ]
 initial
 begin
 	MBR_OUT_expected[6] = 1'b0;
-	MBR_OUT_expected[6] = #288262 1'b1;
-	MBR_OUT_expected[6] = #200000 1'b0;
-	MBR_OUT_expected[6] = #100000 1'b1;
-	MBR_OUT_expected[6] = #200000 1'b0;
+	MBR_OUT_expected[6] = #888262 1'b1;
+	MBR_OUT_expected[6] = #600000 1'b0;
 end 
 // expected MBR_OUT[ 5 ]
 initial
 begin
 	MBR_OUT_expected[5] = 1'b0;
-	MBR_OUT_expected[5] = #788752 1'b1;
-	MBR_OUT_expected[5] = #500000 1'b0;
+	MBR_OUT_expected[5] = #488752 1'b1;
+	MBR_OUT_expected[5] = #200000 1'b0;
+	MBR_OUT_expected[5] = #200000 1'b1;
+	MBR_OUT_expected[5] = #600000 1'b0;
 end 
 // expected MBR_OUT[ 4 ]
 initial
 begin
 	MBR_OUT_expected[4] = 1'b0;
-	MBR_OUT_expected[4] = #488564 1'b1;
-	MBR_OUT_expected[4] = #100000 1'b0;
+	MBR_OUT_expected[4] = #288564 1'b1;
+	MBR_OUT_expected[4] = #200000 1'b0;
+	MBR_OUT_expected[4] = #200000 1'b1;
+	MBR_OUT_expected[4] = #800000 1'b0;
 end 
 // expected MBR_OUT[ 3 ]
 initial
 begin
 	MBR_OUT_expected[3] = 1'b0;
+	MBR_OUT_expected[3] = #488037 1'b1;
+	MBR_OUT_expected[3] = #1000000 1'b0;
 end 
 // expected MBR_OUT[ 2 ]
 initial
 begin
 	MBR_OUT_expected[2] = 1'b0;
-	MBR_OUT_expected[2] = #288633 1'b1;
-	MBR_OUT_expected[2] = #1000000 1'b0;
+	MBR_OUT_expected[2] = #888633 1'b1;
+	MBR_OUT_expected[2] = #600000 1'b0;
 end 
 // expected MBR_OUT[ 1 ]
 initial
 begin
 	MBR_OUT_expected[1] = 1'b0;
-	MBR_OUT_expected[1] = #588014 1'b1;
-	MBR_OUT_expected[1] = #200000 1'b0;
+	MBR_OUT_expected[1] = #488014 1'b1;
+	MBR_OUT_expected[1] = #1000000 1'b0;
 end 
 // expected MBR_OUT[ 0 ]
 initial
 begin
 	MBR_OUT_expected[0] = 1'b0;
-	MBR_OUT_expected[0] = #488027 1'b1;
-	MBR_OUT_expected[0] = #100000 1'b0;
-	MBR_OUT_expected[0] = #200000 1'b1;
-	MBR_OUT_expected[0] = #500000 1'b0;
+	MBR_OUT_expected[0] = #688027 1'b1;
+	MBR_OUT_expected[0] = #800000 1'b0;
 end 
 // expected MIR[ 35 ]
 initial
 begin
 	MIR_expected[35] = 1'b0;
-	MIR_expected[35] = #509584 1'b1;
-	MIR_expected[35] = #400000 1'b0;
 end 
 // expected MIR[ 34 ]
 initial
 begin
 	MIR_expected[34] = 1'b0;
-	MIR_expected[34] = #409417 1'b1;
-	MIR_expected[34] = #100000 1'b0;
+	MIR_expected[34] = #809417 1'b1;
+	MIR_expected[34] = #600000 1'b0;
 end 
 // expected MIR[ 33 ]
 initial
 begin
 	MIR_expected[33] = 1'b0;
-	MIR_expected[33] = #409916 1'b1;
-	MIR_expected[33] = #100000 1'b0;
 end 
 // expected MIR[ 32 ]
 initial
@@ -771,28 +745,24 @@ end
 initial
 begin
 	MIR_expected[31] = 1'b0;
-	MIR_expected[31] = #609477 1'b1;
-	MIR_expected[31] = #600000 1'b0;
+	MIR_expected[31] = #409477 1'b1;
+	MIR_expected[31] = #200000 1'b0;
+	MIR_expected[31] = #200000 1'b1;
+	MIR_expected[31] = #300000 1'b0;
 end 
 // expected MIR[ 30 ]
 initial
 begin
 	MIR_expected[30] = 1'b0;
 	MIR_expected[30] = #809815 1'b1;
-	MIR_expected[30] = #100000 1'b0;
-	MIR_expected[30] = #100000 1'b1;
-	MIR_expected[30] = #200000 1'b0;
+	MIR_expected[30] = #600000 1'b0;
 end 
 // expected MIR[ 29 ]
 initial
 begin
 	MIR_expected[29] = 1'b0;
-	MIR_expected[29] = #409455 1'b1;
-	MIR_expected[29] = #100000 1'b0;
-	MIR_expected[29] = #100000 1'b1;
-	MIR_expected[29] = #200000 1'b0;
-	MIR_expected[29] = #100000 1'b1;
-	MIR_expected[29] = #100000 1'b0;
+	MIR_expected[29] = #809455 1'b1;
+	MIR_expected[29] = #600000 1'b0;
 end 
 // expected MIR[ 28 ]
 initial
@@ -801,19 +771,19 @@ begin
 	MIR_expected[28] = #109850 1'b0;
 	MIR_expected[28] = #100000 1'b1;
 	MIR_expected[28] = #100000 1'b0;
-	MIR_expected[28] = #300000 1'b1;
+	MIR_expected[28] = #200000 1'b1;
 	MIR_expected[28] = #200000 1'b0;
-	MIR_expected[28] = #100000 1'b1;
+	MIR_expected[28] = #300000 1'b1;
 	MIR_expected[28] = #100000 1'b0;
-	# 200000;
+	MIR_expected[28] = #100000 1'b1;
+	# 300000;
 	repeat(2)
 	begin
-		MIR_expected[28] = 1'b1;
-		MIR_expected[28] = #100000 1'b0;
+		MIR_expected[28] = 1'b0;
+		MIR_expected[28] = #100000 1'b1;
 		# 100000;
 	end
-	MIR_expected[28] = 1'b1;
-	MIR_expected[28] = #100000 1'b0;
+	MIR_expected[28] = 1'b0;
 end 
 // expected MIR[ 27 ]
 initial
@@ -821,7 +791,7 @@ begin
 	MIR_expected[27] = 1'b0;
 	MIR_expected[27] = #409424 1'b1;
 	MIR_expected[27] = #100000 1'b0;
-	# 200000;
+	# 400000;
 	repeat(2)
 	begin
 		MIR_expected[27] = 1'b1;
@@ -835,14 +805,11 @@ end
 initial
 begin
 	MIR_expected[26] = 1'b0;
-	# 110015;
-	repeat(2)
-	begin
-		MIR_expected[26] = 1'b1;
-		MIR_expected[26] = #100000 1'b0;
-		# 100000;
-	end
-	MIR_expected[26] = 1'b1;
+	MIR_expected[26] = #110015 1'b1;
+	MIR_expected[26] = #100000 1'b0;
+	MIR_expected[26] = #100000 1'b1;
+	MIR_expected[26] = #100000 1'b0;
+	MIR_expected[26] = #300000 1'b1;
 	MIR_expected[26] = #100000 1'b0;
 	# 700000;
 	repeat(2)
@@ -857,6 +824,8 @@ end
 initial
 begin
 	MIR_expected[25] = 1'b0;
+	MIR_expected[25] = #1110066 1'b1;
+	MIR_expected[25] = #100000 1'b0;
 end 
 // expected MIR[ 24 ]
 initial
@@ -867,8 +836,6 @@ end
 initial
 begin
 	MIR_expected[23] = 1'b0;
-	MIR_expected[23] = #709741 1'b1;
-	MIR_expected[23] = #100000 1'b0;
 end 
 // expected MIR[ 22 ]
 initial
@@ -882,11 +849,11 @@ begin
 	MIR_expected[21] = #109786 1'b1;
 	MIR_expected[21] = #100000 1'b0;
 	MIR_expected[21] = #100000 1'b1;
-	MIR_expected[21] = #200000 1'b0;
+	MIR_expected[21] = #300000 1'b0;
 	MIR_expected[21] = #100000 1'b1;
-	MIR_expected[21] = #100000 1'b0;
-	MIR_expected[21] = #200000 1'b1;
-	# 300000;
+	MIR_expected[21] = #200000 1'b0;
+	MIR_expected[21] = #300000 1'b1;
+	# 200000;
 	repeat(2)
 	begin
 		MIR_expected[21] = 1'b0;
@@ -903,19 +870,20 @@ begin
 	MIR_expected[20] = #110142 1'b1;
 	MIR_expected[20] = #100000 1'b0;
 	MIR_expected[20] = #100000 1'b1;
-	MIR_expected[20] = #200000 1'b0;
-	MIR_expected[20] = #100000 1'b1;
-	MIR_expected[20] = #800000 1'b0;
-	MIR_expected[20] = #100000 1'b1;
-	MIR_expected[20] = #100000 1'b0;
+	# 1100000;
+	repeat(2)
+	begin
+		MIR_expected[20] = 1'b0;
+		MIR_expected[20] = #100000 1'b1;
+		# 100000;
+	end
+	MIR_expected[20] = 1'b0;
 	MIR_expected[20] = #100000 1'b1;
 end 
 // expected MIR[ 19 ]
 initial
 begin
 	MIR_expected[19] = 1'b0;
-	MIR_expected[19] = #810094 1'b1;
-	MIR_expected[19] = #200000 1'b0;
 end 
 // expected MIR[ 18 ]
 initial
@@ -924,17 +892,22 @@ begin
 	MIR_expected[18] = #109995 1'b1;
 	MIR_expected[18] = #100000 1'b0;
 	MIR_expected[18] = #100000 1'b1;
-	MIR_expected[18] = #200000 1'b0;
-	MIR_expected[18] = #100000 1'b1;
-	MIR_expected[18] = #800000 1'b0;
-	MIR_expected[18] = #100000 1'b1;
-	MIR_expected[18] = #100000 1'b0;
+	# 1100000;
+	repeat(2)
+	begin
+		MIR_expected[18] = 1'b0;
+		MIR_expected[18] = #100000 1'b1;
+		# 100000;
+	end
+	MIR_expected[18] = 1'b0;
 	MIR_expected[18] = #100000 1'b1;
 end 
 // expected MIR[ 17 ]
 initial
 begin
 	MIR_expected[17] = 1'b0;
+	MIR_expected[17] = #809691 1'b1;
+	MIR_expected[17] = #100000 1'b0;
 end 
 // expected MIR[ 16 ]
 initial
@@ -943,10 +916,10 @@ begin
 	MIR_expected[16] = #109751 1'b1;
 	MIR_expected[16] = #100000 1'b0;
 	MIR_expected[16] = #100000 1'b1;
-	MIR_expected[16] = #200000 1'b0;
+	MIR_expected[16] = #300000 1'b0;
 	MIR_expected[16] = #100000 1'b1;
 	MIR_expected[16] = #100000 1'b0;
-	MIR_expected[16] = #300000 1'b1;
+	MIR_expected[16] = #400000 1'b1;
 	# 200000;
 	repeat(2)
 	begin
@@ -961,19 +934,21 @@ end
 initial
 begin
 	MIR_expected[15] = 1'b0;
-	MIR_expected[15] = #710093 1'b1;
-	MIR_expected[15] = #200000 1'b0;
 end 
 // expected MIR[ 14 ]
 initial
 begin
 	MIR_expected[14] = 1'b0;
+	MIR_expected[14] = #910395 1'b1;
+	MIR_expected[14] = #100000 1'b0;
 end 
 // expected MIR[ 13 ]
 initial
 begin
 	MIR_expected[13] = 1'b0;
-	MIR_expected[13] = #1210086 1'b1;
+	MIR_expected[13] = #610086 1'b1;
+	MIR_expected[13] = #100000 1'b0;
+	MIR_expected[13] = #300000 1'b1;
 	MIR_expected[13] = #100000 1'b0;
 end 
 // expected MIR[ 12 ]
@@ -990,20 +965,16 @@ end
 initial
 begin
 	MIR_expected[10] = 1'b0;
-	MIR_expected[10] = #1010105 1'b1;
+	MIR_expected[10] = #410105 1'b1;
+	MIR_expected[10] = #100000 1'b0;
+	MIR_expected[10] = #300000 1'b1;
 	MIR_expected[10] = #100000 1'b0;
 end 
 // expected MIR[ 9 ]
 initial
 begin
 	MIR_expected[9] = 1'b0;
-	MIR_expected[9] = #110319 1'b1;
-	MIR_expected[9] = #100000 1'b0;
-	MIR_expected[9] = #100000 1'b1;
-	MIR_expected[9] = #200000 1'b0;
-	MIR_expected[9] = #100000 1'b1;
-	MIR_expected[9] = #100000 1'b0;
-	# 400000;
+	# 110319;
 	repeat(3)
 	begin
 		MIR_expected[9] = 1'b1;
@@ -1011,44 +982,62 @@ begin
 		# 100000;
 	end
 	MIR_expected[9] = 1'b1;
+	MIR_expected[9] = #100000 1'b0;
+	MIR_expected[9] = #400000 1'b1;
+	# 200000;
+	repeat(2)
+	begin
+		MIR_expected[9] = 1'b0;
+		MIR_expected[9] = #100000 1'b1;
+		# 100000;
+	end
+	MIR_expected[9] = 1'b0;
+	MIR_expected[9] = #100000 1'b1;
 end 
 // expected MIR[ 8 ]
 initial
 begin
 	MIR_expected[8] = 1'b0;
+	MIR_expected[8] = #610078 1'b1;
+	MIR_expected[8] = #100000 1'b0;
 end 
 // expected MIR[ 7 ]
 initial
 begin
 	MIR_expected[7] = 1'b0;
-	MIR_expected[7] = #909819 1'b1;
-	MIR_expected[7] = #200000 1'b0;
+	MIR_expected[7] = #409819 1'b1;
+	MIR_expected[7] = #100000 1'b0;
+	MIR_expected[7] = #300000 1'b1;
+	MIR_expected[7] = #100000 1'b0;
 end 
 // expected MIR[ 6 ]
 initial
 begin
 	MIR_expected[6] = 1'b0;
-	MIR_expected[6] = #1110311 1'b1;
+	MIR_expected[6] = #610311 1'b1;
 	MIR_expected[6] = #100000 1'b0;
 end 
 // expected MIR[ 5 ]
 initial
 begin
 	MIR_expected[5] = 1'b0;
-	MIR_expected[5] = #910649 1'b1;
+	MIR_expected[5] = #810649 1'b1;
 	MIR_expected[5] = #100000 1'b0;
 end 
 // expected MIR[ 4 ]
 initial
 begin
 	MIR_expected[4] = 1'b0;
-	MIR_expected[4] = #111002 1'b1;
+	# 111002;
+	repeat(3)
+	begin
+		MIR_expected[4] = 1'b1;
+		MIR_expected[4] = #100000 1'b0;
+		# 100000;
+	end
+	MIR_expected[4] = 1'b1;
 	MIR_expected[4] = #100000 1'b0;
-	MIR_expected[4] = #100000 1'b1;
-	MIR_expected[4] = #200000 1'b0;
-	MIR_expected[4] = #100000 1'b1;
-	MIR_expected[4] = #100000 1'b0;
-	# 400000;
+	# 500000;
 	repeat(3)
 	begin
 		MIR_expected[4] = 1'b1;
@@ -1061,32 +1050,43 @@ end
 initial
 begin
 	MIR_expected[3] = 1'b0;
+	MIR_expected[3] = #1109413 1'b1;
+	MIR_expected[3] = #100000 1'b0;
 end 
 // expected MIR[ 2 ]
 initial
 begin
 	MIR_expected[2] = 1'b0;
-	MIR_expected[2] = #909703 1'b1;
+	MIR_expected[2] = #409703 1'b1;
+	MIR_expected[2] = #100000 1'b0;
+	MIR_expected[2] = #300000 1'b1;
 	MIR_expected[2] = #200000 1'b0;
 end 
 // expected MIR[ 1 ]
 initial
 begin
 	MIR_expected[1] = 1'b0;
-	MIR_expected[1] = #709440 1'b1;
-	MIR_expected[1] = #200000 1'b0;
+	MIR_expected[1] = #609440 1'b1;
+	MIR_expected[1] = #100000 1'b0;
+	MIR_expected[1] = #200000 1'b1;
+	MIR_expected[1] = #100000 1'b0;
 end 
 // expected MIR[ 0 ]
 initial
 begin
 	MIR_expected[0] = 1'b0;
-	MIR_expected[0] = #109436 1'b1;
+	# 109436;
+	repeat(4)
+	begin
+		MIR_expected[0] = 1'b1;
+		MIR_expected[0] = #100000 1'b0;
+		# 100000;
+	end
+	MIR_expected[0] = 1'b1;
 	MIR_expected[0] = #100000 1'b0;
-	MIR_expected[0] = #100000 1'b1;
-	MIR_expected[0] = #200000 1'b0;
-	MIR_expected[0] = #100000 1'b1;
-	# 400000;
-	repeat(3)
+	MIR_expected[0] = #200000 1'b1;
+	# 200000;
+	repeat(2)
 	begin
 		MIR_expected[0] = 1'b0;
 		MIR_expected[0] = #100000 1'b1;
@@ -1099,63 +1099,59 @@ end
 initial
 begin
 	MPC_expected[8] = 1'b0;
-	MPC_expected[8] = #511441 1'b1;
-	MPC_expected[8] = #400000 1'b0;
 end 
 // expected MPC[ 7 ]
 initial
 begin
 	MPC_expected[7] = 1'b0;
-	MPC_expected[7] = #387832 1'b1;
-	MPC_expected[7] = #123363 1'b0;
-	MPC_expected[7] = #635 1'b1;
-	MPC_expected[7] = #76002 1'b0;
-	MPC_expected[7] = #723998 1'b1;
+	MPC_expected[7] = #787832 1'b1;
+	MPC_expected[7] = #623363 1'b0;
+	MPC_expected[7] = #100635 1'b1;
 	MPC_expected[7] = #76002 1'b0;
 end 
 // expected MPC[ 6 ]
 initial
 begin
 	MPC_expected[6] = 1'b0;
-	MPC_expected[6] = #387625 1'b1;
-	MPC_expected[6] = #123614 1'b0;
-	MPC_expected[6] = #386 1'b1;
+	MPC_expected[6] = #1511625 1'b1;
 	MPC_expected[6] = #76000 1'b0;
 end 
 // expected MPC[ 5 ]
 initial
 begin
 	MPC_expected[5] = 1'b0;
-	MPC_expected[5] = #1312743 1'b1;
+	MPC_expected[5] = #712743 1'b1;
+	MPC_expected[5] = #76009 1'b0;
+	MPC_expected[5] = #723991 1'b1;
 	MPC_expected[5] = #76009 1'b0;
 end 
 // expected MPC[ 4 ]
 initial
 begin
 	MPC_expected[4] = 1'b0;
-	MPC_expected[4] = #588311 1'b1;
-	MPC_expected[4] = #623409 1'b0;
+	MPC_expected[4] = #388311 1'b1;
+	MPC_expected[4] = #223409 1'b0;
+	MPC_expected[4] = #176591 1'b1;
+	MPC_expected[4] = #323409 1'b0;
+	MPC_expected[4] = #400595 1'b1;
+	MPC_expected[4] = #75996 1'b0;
 end 
 // expected MPC[ 3 ]
 initial
 begin
 	MPC_expected[3] = 1'b0;
-	MPC_expected[3] = #811302 1'b1;
-	MPC_expected[3] = #100000 1'b0;
-	MPC_expected[3] = #100000 1'b1;
-	MPC_expected[3] = #200000 1'b0;
+	MPC_expected[3] = #711982 1'b1;
+	MPC_expected[3] = #699320 1'b0;
+	MPC_expected[3] = #100680 1'b1;
+	MPC_expected[3] = #75993 1'b0;
 end 
 // expected MPC[ 2 ]
 initial
 begin
 	MPC_expected[2] = 1'b0;
-	MPC_expected[2] = #388068 1'b1;
-	MPC_expected[2] = #123321 1'b0;
-	MPC_expected[2] = #675 1'b1;
-	MPC_expected[2] = #299325 1'b0;
-	MPC_expected[2] = #100000 1'b1;
-	MPC_expected[2] = #100000 1'b0;
-	MPC_expected[2] = #300675 1'b1;
+	MPC_expected[2] = #811389 1'b1;
+	MPC_expected[2] = #600000 1'b0;
+	MPC_expected[2] = #100675 1'b1;
 	MPC_expected[2] = #76004 1'b0;
 end 
 // expected MPC[ 1 ]
@@ -1165,18 +1161,19 @@ begin
 	MPC_expected[1] = #110460 1'b0;
 	MPC_expected[1] = #100000 1'b1;
 	MPC_expected[1] = #100000 1'b0;
-	MPC_expected[1] = #300000 1'b1;
+	MPC_expected[1] = #200000 1'b1;
 	MPC_expected[1] = #200000 1'b0;
-	MPC_expected[1] = #100000 1'b1;
+	MPC_expected[1] = #1258 1'b1;
 	MPC_expected[1] = #100000 1'b0;
-	# 200000;
-	repeat(2)
-	begin
-		MPC_expected[1] = 1'b1;
-		MPC_expected[1] = #100000 1'b0;
-		# 100000;
-	end
-	MPC_expected[1] = 1'b1;
+	MPC_expected[1] = #198742 1'b1;
+	MPC_expected[1] = #100000 1'b0;
+	MPC_expected[1] = #100000 1'b1;
+	MPC_expected[1] = #300000 1'b0;
+	MPC_expected[1] = #1258 1'b1;
+	MPC_expected[1] = #75690 1'b0;
+	MPC_expected[1] = #23052 1'b1;
+	MPC_expected[1] = #100000 1'b0;
+	MPC_expected[1] = #100000 1'b1;
 	MPC_expected[1] = #100000 1'b0;
 end 
 // expected MPC[ 0 ]
@@ -1185,7 +1182,7 @@ begin
 	MPC_expected[0] = 1'b0;
 	MPC_expected[0] = #411551 1'b1;
 	MPC_expected[0] = #100000 1'b0;
-	MPC_expected[0] = #76900 1'b1;
+	MPC_expected[0] = #276900 1'b1;
 	MPC_expected[0] = #24309 1'b0;
 	# 98791;
 	repeat(2)
@@ -1204,7 +1201,7 @@ end
 initial
 begin
 	DATA_MEM_write_enable_expected = 1'b0;
-	DATA_MEM_write_enable_expected = #1186427 1'b1;
+	DATA_MEM_write_enable_expected = #686427 1'b1;
 	DATA_MEM_write_enable_expected = #100000 1'b0;
 end 
 // generate trigger
@@ -3178,7 +3175,7 @@ initial
 
 begin 
 $timeformat(-12,3," ps",6);
-#1800000;
+#2000000;
 if (nummismatches > 0)
 	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
 else
@@ -3239,68 +3236,72 @@ end
 initial
 begin
 	PROG_MEM_IN[7] = 1'b1;
-	PROG_MEM_IN[7] = #410000 1'b0;
-	PROG_MEM_IN[7] = #110000 1'b1;
+	PROG_MEM_IN[7] = #210000 1'b0;
+	PROG_MEM_IN[7] = #410000 1'b1;
 	PROG_MEM_IN[7] = #700000 1'b0;
 end 
 // PROG_MEM_IN[ 6 ]
 initial
 begin
 	PROG_MEM_IN[6] = 1'b1;
-	PROG_MEM_IN[6] = #410000 1'b0;
-	PROG_MEM_IN[6] = #110000 1'b1;
-	PROG_MEM_IN[6] = #200000 1'b0;
+	PROG_MEM_IN[6] = #210000 1'b0;
+	PROG_MEM_IN[6] = #610000 1'b1;
+	PROG_MEM_IN[6] = #600000 1'b0;
 end 
 // PROG_MEM_IN[ 5 ]
 initial
 begin
 	PROG_MEM_IN[5] = 1'b1;
 	PROG_MEM_IN[5] = #210000 1'b0;
-	PROG_MEM_IN[5] = #510000 1'b1;
+	PROG_MEM_IN[5] = #210000 1'b1;
+	PROG_MEM_IN[5] = #200000 1'b0;
+	PROG_MEM_IN[5] = #200000 1'b1;
 	PROG_MEM_IN[5] = #500000 1'b0;
 end 
 // PROG_MEM_IN[ 4 ]
 initial
 begin
 	PROG_MEM_IN[4] = 1'b1;
-	PROG_MEM_IN[4] = #210000 1'b0;
+	PROG_MEM_IN[4] = #420000 1'b0;
 	PROG_MEM_IN[4] = #200000 1'b1;
-	PROG_MEM_IN[4] = #110000 1'b0;
+	PROG_MEM_IN[4] = #800000 1'b0;
 end 
 // PROG_MEM_IN[ 3 ]
 initial
 begin
 	PROG_MEM_IN[3] = 1'b1;
 	PROG_MEM_IN[3] = #210000 1'b0;
+	PROG_MEM_IN[3] = #210000 1'b1;
+	PROG_MEM_IN[3] = #1000000 1'b0;
 end 
 // PROG_MEM_IN[ 2 ]
 initial
 begin
 	PROG_MEM_IN[2] = 1'b1;
-	PROG_MEM_IN[2] = #1220000 1'b0;
+	PROG_MEM_IN[2] = #210000 1'b0;
+	PROG_MEM_IN[2] = #610000 1'b1;
+	PROG_MEM_IN[2] = #500000 1'b0;
 end 
 // PROG_MEM_IN[ 1 ]
 initial
 begin
 	PROG_MEM_IN[1] = 1'b1;
 	PROG_MEM_IN[1] = #210000 1'b0;
-	PROG_MEM_IN[1] = #310000 1'b1;
-	PROG_MEM_IN[1] = #200000 1'b0;
+	PROG_MEM_IN[1] = #210000 1'b1;
+	PROG_MEM_IN[1] = #1000000 1'b0;
 end 
 // PROG_MEM_IN[ 0 ]
 initial
 begin
 	PROG_MEM_IN[0] = 1'b1;
 	PROG_MEM_IN[0] = #210000 1'b0;
-	PROG_MEM_IN[0] = #200000 1'b1;
-	PROG_MEM_IN[0] = #110000 1'b0;
-	PROG_MEM_IN[0] = #200000 1'b1;
-	PROG_MEM_IN[0] = #500000 1'b0;
+	PROG_MEM_IN[0] = #410000 1'b1;
+	PROG_MEM_IN[0] = #700000 1'b0;
 end 
 // DATA_MEM_IN[ 31 ]
 initial
 begin
-	DATA_MEM_IN[31] = 1'b1;
+	DATA_MEM_IN[31] = 1'b0;
 end 
 // DATA_MEM_IN[ 30 ]
 initial
@@ -3310,7 +3311,7 @@ end
 // DATA_MEM_IN[ 29 ]
 initial
 begin
-	DATA_MEM_IN[29] = 1'b1;
+	DATA_MEM_IN[29] = 1'b0;
 end 
 // DATA_MEM_IN[ 28 ]
 initial
@@ -3325,7 +3326,7 @@ end
 // DATA_MEM_IN[ 26 ]
 initial
 begin
-	DATA_MEM_IN[26] = 1'b1;
+	DATA_MEM_IN[26] = 1'b0;
 end 
 // DATA_MEM_IN[ 25 ]
 initial
@@ -3335,17 +3336,17 @@ end
 // DATA_MEM_IN[ 24 ]
 initial
 begin
-	DATA_MEM_IN[24] = 1'b1;
+	DATA_MEM_IN[24] = 1'b0;
 end 
 // DATA_MEM_IN[ 23 ]
 initial
 begin
-	DATA_MEM_IN[23] = 1'b1;
+	DATA_MEM_IN[23] = 1'b0;
 end 
 // DATA_MEM_IN[ 22 ]
 initial
 begin
-	DATA_MEM_IN[22] = 1'b1;
+	DATA_MEM_IN[22] = 1'b0;
 end 
 // DATA_MEM_IN[ 21 ]
 initial
@@ -3365,12 +3366,12 @@ end
 // DATA_MEM_IN[ 18 ]
 initial
 begin
-	DATA_MEM_IN[18] = 1'b1;
+	DATA_MEM_IN[18] = 1'b0;
 end 
 // DATA_MEM_IN[ 17 ]
 initial
 begin
-	DATA_MEM_IN[17] = 1'b1;
+	DATA_MEM_IN[17] = 1'b0;
 end 
 // DATA_MEM_IN[ 16 ]
 initial
@@ -3380,22 +3381,22 @@ end
 // DATA_MEM_IN[ 15 ]
 initial
 begin
-	DATA_MEM_IN[15] = 1'b1;
+	DATA_MEM_IN[15] = 1'b0;
 end 
 // DATA_MEM_IN[ 14 ]
 initial
 begin
-	DATA_MEM_IN[14] = 1'b1;
+	DATA_MEM_IN[14] = 1'b0;
 end 
 // DATA_MEM_IN[ 13 ]
 initial
 begin
-	DATA_MEM_IN[13] = 1'b1;
+	DATA_MEM_IN[13] = 1'b0;
 end 
 // DATA_MEM_IN[ 12 ]
 initial
 begin
-	DATA_MEM_IN[12] = 1'b1;
+	DATA_MEM_IN[12] = 1'b0;
 end 
 // DATA_MEM_IN[ 11 ]
 initial
@@ -3425,7 +3426,7 @@ end
 // DATA_MEM_IN[ 6 ]
 initial
 begin
-	DATA_MEM_IN[6] = 1'b1;
+	DATA_MEM_IN[6] = 1'b0;
 end 
 // DATA_MEM_IN[ 5 ]
 initial
@@ -3435,12 +3436,12 @@ end
 // DATA_MEM_IN[ 4 ]
 initial
 begin
-	DATA_MEM_IN[4] = 1'b1;
+	DATA_MEM_IN[4] = 1'b0;
 end 
 // DATA_MEM_IN[ 3 ]
 initial
 begin
-	DATA_MEM_IN[3] = 1'b1;
+	DATA_MEM_IN[3] = 1'b0;
 end 
 // DATA_MEM_IN[ 2 ]
 initial
@@ -3450,7 +3451,7 @@ end
 // DATA_MEM_IN[ 1 ]
 initial
 begin
-	DATA_MEM_IN[1] = 1'b1;
+	DATA_MEM_IN[1] = 1'b0;
 end 
 // DATA_MEM_IN[ 0 ]
 initial
