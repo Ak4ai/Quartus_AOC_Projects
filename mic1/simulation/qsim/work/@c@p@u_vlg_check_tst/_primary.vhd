@@ -2,6 +2,7 @@ library verilog;
 use verilog.vl_types.all;
 entity CPU_vlg_check_tst is
     port(
+        C               : in     vl_logic_vector(31 downto 0);
         DATA_MEM_ADDR   : in     vl_logic_vector(31 downto 0);
         DATA_MEM_OUT    : in     vl_logic_vector(31 downto 0);
         DATA_MEM_write_enable: in     vl_logic;

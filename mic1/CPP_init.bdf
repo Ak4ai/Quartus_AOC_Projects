@@ -161,29 +161,29 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "CPP_INIT[7]" (rect 443 256 505 268)(font "Arial" ))
-	(pt 416 272)
-	(pt 464 272)
-	(bus)
-)
-(connector
-	(text "CPP_INIT[6..0]" (rect 451 328 526 340)(font "Arial" ))
-	(pt 424 344)
-	(pt 472 344)
-	(bus)
-)
-(connector
-	(text "CPP_INIT[31..8]" (rect 451 360 532 372)(font "Arial" ))
-	(pt 424 376)
-	(pt 472 376)
-	(bus)
-)
-(connector
 	(pt 344 344)
 	(pt 344 376)
 )
 (connector
 	(pt 344 376)
 	(pt 344 416)
+)
+(connector
+	(text "CPP_INIT[3..0]" (rect 451 328 526 340)(font "Arial" ))
+	(pt 424 344)
+	(pt 472 344)
+	(bus)
+)
+(connector
+	(text "CPP_INIT[9..4]" (rect 443 256 518 268)(font "Arial" ))
+	(pt 416 272)
+	(pt 464 272)
+	(bus)
+)
+(connector
+	(text "CPP_INIT[31..10]" (rect 451 360 538 372)(font "Arial" ))
+	(pt 424 376)
+	(pt 472 376)
+	(bus)
 )
 (junction (pt 344 376))

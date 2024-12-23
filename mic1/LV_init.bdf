@@ -115,6 +115,30 @@ applicable agreement for further details.
 		(line (pt 14 25)(pt 32 16))
 	)
 )
+(symbol
+	(rect 392 432 440 464)
+	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
+	(text "inst4" (rect 3 21 26 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 32 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 14 7)(pt 32 16))
+		(line (pt 14 25)(pt 14 7))
+		(line (pt 14 25)(pt 32 16))
+	)
+)
 (connector
 	(pt 560 352)
 	(pt 480 352)
@@ -125,16 +149,6 @@ applicable agreement for further details.
 	(pt 360 392)
 )
 (connector
-	(pt 360 392)
-	(pt 360 512)
-)
-(connector
-	(text "LV_INIT[30..0]" (rect 467 376 538 388)(font "Arial" ))
-	(pt 440 392)
-	(pt 488 392)
-	(bus)
-)
-(connector
 	(pt 352 272)
 	(pt 352 288)
 )
@@ -143,7 +157,32 @@ applicable agreement for further details.
 	(pt 392 288)
 )
 (connector
-	(text "LV_INIT[31]" (rect 441 272 500 284)(font "Arial" ))
+	(text "LV_INIT[6]" (rect 441 272 494 284)(font "Arial" ))
 	(pt 440 288)
 	(pt 488 288)
 )
+(connector
+	(text "LV_INIT[5..0]" (rect 467 376 533 388)(font "Arial" ))
+	(pt 440 392)
+	(pt 488 392)
+	(bus)
+)
+(connector
+	(pt 360 448)
+	(pt 392 448)
+)
+(connector
+	(pt 360 392)
+	(pt 360 448)
+)
+(connector
+	(pt 360 448)
+	(pt 360 512)
+)
+(connector
+	(text "LV_INIT[31..7]" (rect 467 432 538 444)(font "Arial" ))
+	(pt 440 448)
+	(pt 488 448)
+	(bus)
+)
+(junction (pt 360 448))

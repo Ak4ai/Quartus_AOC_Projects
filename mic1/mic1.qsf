@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY CPU
+set_global_assignment -name TOP_LEVEL_ENTITY MIC1
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:45:50  MARCH 14, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -49,6 +49,14 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_simulation
 set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity mic1 -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity mic1 -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity mic1 -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -entity mic1 -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE MIC1_iload_iadd.vwf
+set_global_assignment -name MIF_FILE RAM.mif
+set_global_assignment -name MIF_FILE "microcode(rafael).mif"
+set_global_assignment -name MIF_FILE "microcode(alvarenga).mif"
 set_global_assignment -name VECTOR_WAVEFORM_FILE SHIFTER_ULA.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE "CPU VALIDATION/CPU_wide_istore.vwf"
 set_global_assignment -name VECTOR_WAVEFORM_FILE "CPU VALIDATION/CPU_wide_iload.vwf"
@@ -67,8 +75,6 @@ set_global_assignment -name MIF_FILE MICROCODE_cesa.mif
 set_global_assignment -name SOURCE_FILE control_store.cmp
 set_global_assignment -name BDF_FILE SHIFTER+ULA.bdf
 set_global_assignment -name BDF_FILE MPC_GENERATOR.bdf
-set_global_assignment -name VHDL_FILE RAM.vhd
-set_global_assignment -name VHDL_FILE control_store.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE Control_Unit/CONTROL_UNIT_istore.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Control_Unit/CONTROL_UNIT_iload.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Control_Unit/CONTROL_UNIT_iadd_isub.vwf
@@ -113,14 +119,9 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE PC.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE SP.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE CPP.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE LV.vwf
-set_global_assignment -name QIP_FILE RAM.qip
-set_global_assignment -name MIF_FILE RAM.mif
-set_global_assignment -name BDF_FILE RAM_TEST.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE RAM_TEST.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE BANK_REGS.vwf
 set_global_assignment -name BDF_FILE REGISTER4bit.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE TOS.vwf
-set_global_assignment -name BDF_FILE mic1.bdf
 set_global_assignment -name BDF_FILE DATAPATH.bdf
 set_global_assignment -name BDF_FILE SHIFTER_ULA.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE DATAPATH_test_files/2/DATAPATH.vwf
@@ -129,14 +130,18 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE H.vwf
 set_global_assignment -name BDF_FILE REGISTER8bit.bdf
 set_global_assignment -name BDF_FILE CPU.bdf
 set_global_assignment -name BDF_FILE CONTROL_UNIT.bdf
-set_global_assignment -name QIP_FILE control_store.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE mpc_generator.vwf
 set_global_assignment -name MIF_FILE microcode_Backup.mif
 set_global_assignment -name MIF_FILE Microcodigos/microcode_Backup.mif
 set_global_assignment -name BDF_FILE DECODER2x4.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE LV_init.vwf
+set_global_assignment -name BDF_FILE MIC1.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE "MIC1_VALIDATION/MIC1 VALIDATION/CPP_Init.vwf"
+set_global_assignment -name QIP_FILE CONTROL_STORE.qip
+set_global_assignment -name QIP_FILE RAM.qip
+set_global_assignment -name BDF_FILE MIC1_DEF.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/CPU VALIDATION/CPU_ifeq.vwf"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/MIC1_iload_iadd.vwf"
