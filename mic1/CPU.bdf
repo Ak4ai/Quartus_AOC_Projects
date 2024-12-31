@@ -505,22 +505,12 @@ applicable agreement for further details.
 )
 (connector
 	(pt 496 440)
-	(pt 784 440)
-	(bus)
-)
-(connector
-	(pt 784 352)
-	(pt 784 440)
-)
-(connector
-	(pt 784 440)
-	(pt 784 544)
-)
-(connector
-	(pt 784 440)
 	(pt 1032 440)
 	(bus)
 )
+(connector
+	(pt 784 544)
+	(pt 784 352)
+)
 (junction (pt 776 560))
-(junction (pt 784 440))
 (junction (pt 1032 352))

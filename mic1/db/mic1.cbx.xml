@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="mic1">
-		<CBX_INST_ENTRY INSTANCE_NAME="|MIC1|CONTROL_UNIT:inst1|CONTROL_STORE:inst5|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_d581.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|MIC1|RAM:inst2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_uab2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIC1_DEF|CPU:inst|CONTROL_UNIT:inst1|CONTROL_STORE:inst5|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_d581.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|MIC1_DEF|RAM:inst2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_uab2.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
