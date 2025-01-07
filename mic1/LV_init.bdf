@@ -140,11 +140,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 560 352)
-	(pt 480 352)
-	(bus)
-)
-(connector
 	(pt 392 392)
 	(pt 360 392)
 )
@@ -162,12 +157,6 @@ applicable agreement for further details.
 	(pt 488 288)
 )
 (connector
-	(text "LV_INIT[5..0]" (rect 467 376 533 388)(font "Arial" ))
-	(pt 440 392)
-	(pt 488 392)
-	(bus)
-)
-(connector
 	(pt 360 448)
 	(pt 392 448)
 )
@@ -180,9 +169,36 @@ applicable agreement for further details.
 	(pt 360 512)
 )
 (connector
-	(text "LV_INIT[31..7]" (rect 467 432 538 444)(font "Arial" ))
+	(pt 560 352)
+	(pt 488 352)
+	(bus)
+)
+(connector
+	(pt 488 352)
+	(pt 488 392)
+	(bus)
+)
+(connector
+	(pt 488 392)
+	(pt 488 448)
+	(bus)
+)
+(connector
+	(pt 488 288)
+	(pt 488 352)
+)
+(connector
+	(text "LV_INIT[31..7]" (rect 467 376 538 388)(font "Arial" ))
+	(pt 440 392)
+	(pt 488 392)
+	(bus)
+)
+(connector
+	(text "LV_INIT[5..0]" (rect 467 432 533 444)(font "Arial" ))
 	(pt 440 448)
 	(pt 488 448)
 	(bus)
 )
 (junction (pt 360 448))
+(junction (pt 488 352))
+(junction (pt 488 392))

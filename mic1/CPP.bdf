@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 248 392 424 408)
+	(rect 248 384 424 400)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "IN_C[31..0]" (rect 9 0 66 12)(font "Arial" ))
 	(pt 176 8)
@@ -413,17 +413,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 424 392)
-	(pt 424 400)
-	(bus)
-)
-(connector
-	(text "IN_C[31..0]" (rect 536 376 593 388)(font "Arial" ))
-	(pt 568 392)
-	(pt 424 392)
-	(bus)
-)
-(connector
 	(pt 376 456)
 	(pt 440 456)
 )
@@ -505,6 +494,12 @@ applicable agreement for further details.
 	(text "<<__$DEF_ALIAS2917>>" (rect 410 288 533 300)(font "Arial" )(invisible))
 	(pt 464 304)
 	(pt 344 304)
+	(bus)
+)
+(connector
+	(text "IN_C[31..0]" (rect 536 376 593 388)(font "Arial" ))
+	(pt 568 392)
+	(pt 424 392)
 	(bus)
 )
 (junction (pt 440 456))

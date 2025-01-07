@@ -492,88 +492,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 480 680)
-	(pt 224 680)
-)
-(connector
-	(pt 480 832)
-	(pt 480 1040)
-)
-(connector
-	(pt 480 1040)
-	(pt 480 1248)
-)
-(connector
-	(pt 224 696)
-	(pt 456 696)
-	(bus)
-)
-(connector
-	(pt 456 848)
-	(pt 456 1056)
-	(bus)
-)
-(connector
-	(pt 456 1056)
-	(pt 456 1264)
-	(bus)
-)
-(connector
-	(pt 224 712)
-	(pt 440 712)
-)
-(connector
-	(pt 224 728)
-	(pt 424 728)
-	(bus)
-)
-(connector
-	(pt 224 744)
-	(pt 408 744)
-)
-(connector
-	(pt 224 760)
-	(pt 552 760)
-)
-(connector
-	(pt 424 880)
-	(pt 424 1088)
-	(bus)
-)
-(connector
-	(pt 424 1088)
-	(pt 424 1296)
-	(bus)
-)
-(connector
-	(pt 224 824)
-	(pt 360 824)
-)
-(connector
-	(pt 360 824)
-	(pt 360 912)
-)
-(connector
-	(pt 224 840)
-	(pt 344 840)
-)
-(connector
-	(pt 344 840)
-	(pt 344 928)
-)
-(connector
-	(pt 360 704)
-	(pt 360 824)
-)
-(connector
-	(pt 344 720)
-	(pt 344 840)
-)
-(connector
-	(pt 840 640)
-	(pt 840 792)
-)
-(connector
 	(pt 496 792)
 	(pt 840 792)
 )
@@ -582,20 +500,12 @@ applicable agreement for further details.
 	(pt 496 792)
 )
 (connector
-	(pt 840 848)
-	(pt 840 1000)
-)
-(connector
 	(pt 496 1152)
 	(pt 496 1000)
 )
 (connector
 	(pt 496 1000)
 	(pt 840 1000)
-)
-(connector
-	(pt 840 1056)
-	(pt 840 1208)
 )
 (connector
 	(pt 496 1360)
@@ -637,72 +547,8 @@ applicable agreement for further details.
 	(pt 960 1264)
 )
 (connector
-	(text "F1" (rect 545 704 557 716)(font "Arial" ))
-	(pt 568 720)
-	(pt 344 720)
-)
-(connector
 	(pt 568 720)
 	(pt 568 736)
-)
-(connector
-	(pt 480 624)
-	(pt 480 680)
-)
-(connector
-	(pt 480 680)
-	(pt 480 832)
-)
-(connector
-	(pt 424 672)
-	(pt 424 728)
-	(bus)
-)
-(connector
-	(pt 424 728)
-	(pt 424 880)
-	(bus)
-)
-(connector
-	(pt 456 640)
-	(pt 456 696)
-	(bus)
-)
-(connector
-	(pt 456 696)
-	(pt 456 848)
-	(bus)
-)
-(connector
-	(pt 440 656)
-	(pt 440 712)
-)
-(connector
-	(pt 440 712)
-	(pt 440 864)
-)
-(connector
-	(pt 408 688)
-	(pt 408 744)
-)
-(connector
-	(pt 408 744)
-	(pt 408 896)
-)
-(connector
-	(text "INVA" (rect 592 608 619 620)(font "Arial" ))
-	(pt 480 624)
-	(pt 632 624)
-)
-(connector
-	(text "ENA" (rect 592 640 615 652)(font "Arial" ))
-	(pt 440 656)
-	(pt 632 656)
-)
-(connector
-	(text "ENB" (rect 588 672 610 684)(font "Arial" ))
-	(pt 408 688)
-	(pt 632 688)
 )
 (connector
 	(pt 568 736)
@@ -729,61 +575,12 @@ applicable agreement for further details.
 	(pt 616 720)
 )
 (connector
-	(text "F0" (rect 548 688 560 700)(font "Arial" ))
-	(pt 360 704)
-	(pt 616 704)
-)
-(connector
 	(pt 616 720)
 	(pt 632 720)
 )
 (connector
-	(text "A[7..0]" (rect 592 624 625 636)(font "Arial" ))
-	(pt 456 640)
-	(pt 632 640)
-	(bus)
-)
-(connector
-	(text "B[7..0]" (rect 588 656 621 668)(font "Arial" ))
-	(pt 424 672)
-	(pt 632 672)
-	(bus)
-)
-(connector
-	(text "INVA" (rect 544 816 571 828)(font "Arial" ))
-	(pt 480 832)
-	(pt 632 832)
-)
-(connector
-	(text "A[8..15]" (rect 544 832 582 844)(font "Arial" ))
-	(pt 456 848)
-	(pt 632 848)
-	(bus)
-)
-(connector
-	(text "B[8..15]" (rect 540 864 578 876)(font "Arial" ))
-	(pt 424 880)
-	(pt 632 880)
-	(bus)
-)
-(connector
-	(text "ENA" (rect 544 848 567 860)(font "Arial" ))
-	(pt 440 864)
-	(pt 632 864)
-)
-(connector
-	(text "ENB" (rect 540 880 562 892)(font "Arial" ))
-	(pt 408 896)
-	(pt 632 896)
-)
-(connector
 	(pt 616 912)
 	(pt 616 928)
-)
-(connector
-	(text "F0" (rect 548 896 560 908)(font "Arial" ))
-	(pt 360 912)
-	(pt 616 912)
 )
 (connector
 	(pt 616 928)
@@ -792,11 +589,6 @@ applicable agreement for further details.
 (connector
 	(pt 608 928)
 	(pt 608 944)
-)
-(connector
-	(text "F1" (rect 545 912 557 924)(font "Arial" ))
-	(pt 344 928)
-	(pt 608 928)
 )
 (connector
 	(pt 608 944)
@@ -823,77 +615,8 @@ applicable agreement for further details.
 	(pt 632 912)
 )
 (connector
-	(text "INVA" (rect 544 1024 571 1036)(font "Arial" ))
-	(pt 480 1040)
-	(pt 632 1040)
-)
-(connector
-	(text "A[16..23]" (rect 544 1040 588 1052)(font "Arial" ))
-	(pt 456 1056)
-	(pt 632 1056)
-	(bus)
-)
-(connector
-	(text "ENA" (rect 592 1056 615 1068)(font "Arial" ))
-	(pt 440 1072)
-	(pt 632 1072)
-)
-(connector
-	(pt 440 864)
-	(pt 440 1072)
-)
-(connector
-	(pt 440 1072)
-	(pt 440 1280)
-)
-(connector
-	(text "ENB" (rect 588 1088 610 1100)(font "Arial" ))
-	(pt 408 1104)
-	(pt 632 1104)
-)
-(connector
-	(pt 408 896)
-	(pt 408 1104)
-)
-(connector
-	(pt 408 1104)
-	(pt 408 1312)
-)
-(connector
-	(text "B[16..23]" (rect 540 1072 584 1084)(font "Arial" ))
-	(pt 424 1088)
-	(pt 632 1088)
-	(bus)
-)
-(connector
-	(text "F0" (rect 548 1104 560 1116)(font "Arial" ))
-	(pt 616 1120)
-	(pt 360 1120)
-)
-(connector
 	(pt 616 1120)
 	(pt 616 1136)
-)
-(connector
-	(pt 360 912)
-	(pt 360 1120)
-)
-(connector
-	(pt 360 1120)
-	(pt 360 1328)
-)
-(connector
-	(text "F1" (rect 569 1120 581 1132)(font "Arial" ))
-	(pt 344 1136)
-	(pt 608 1136)
-)
-(connector
-	(pt 344 928)
-	(pt 344 1136)
-)
-(connector
-	(pt 344 1136)
-	(pt 344 1344)
 )
 (connector
 	(pt 608 1136)
@@ -928,28 +651,8 @@ applicable agreement for further details.
 	(pt 624 1120)
 )
 (connector
-	(text "INVA" (rect 520 1232 547 1244)(font "Arial" ))
-	(pt 480 1248)
-	(pt 632 1248)
-)
-(connector
-	(text "ENA" (rect 544 1264 567 1276)(font "Arial" ))
-	(pt 440 1280)
-	(pt 632 1280)
-)
-(connector
-	(text "ENB" (rect 540 1296 562 1308)(font "Arial" ))
-	(pt 408 1312)
-	(pt 632 1312)
-)
-(connector
 	(pt 616 1328)
 	(pt 616 1344)
-)
-(connector
-	(text "F0" (rect 548 1312 560 1324)(font "Arial" ))
-	(pt 360 1328)
-	(pt 616 1328)
 )
 (connector
 	(pt 616 1344)
@@ -976,10 +679,6 @@ applicable agreement for further details.
 	(pt 632 1328)
 )
 (connector
-	(pt 344 1344)
-	(pt 608 1344)
-)
-(connector
 	(pt 608 1344)
 	(pt 608 1352)
 )
@@ -994,18 +693,6 @@ applicable agreement for further details.
 (connector
 	(pt 616 1360)
 	(pt 632 1360)
-)
-(connector
-	(text "A[24..31]" (rect 544 1248 588 1260)(font "Arial" ))
-	(pt 456 1264)
-	(pt 632 1264)
-	(bus)
-)
-(connector
-	(text "B[24..31]" (rect 540 1280 584 1292)(font "Arial" ))
-	(pt 424 1296)
-	(pt 632 1296)
-	(bus)
 )
 (connector
 	(text "OUTPUT[31..24]" (rect 846 1232 927 1244)(font "Arial" ))
@@ -1036,27 +723,200 @@ applicable agreement for further details.
 	(pt 888 1416)
 	(bus)
 )
-(junction (pt 480 680))
-(junction (pt 480 832))
-(junction (pt 480 1040))
-(junction (pt 456 696))
-(junction (pt 456 848))
-(junction (pt 456 1056))
-(junction (pt 440 712))
-(junction (pt 408 744))
-(junction (pt 360 912))
-(junction (pt 360 1120))
-(junction (pt 440 864))
-(junction (pt 408 896))
-(junction (pt 344 928))
-(junction (pt 440 1072))
-(junction (pt 408 1104))
-(junction (pt 344 1136))
-(junction (pt 424 728))
-(junction (pt 424 880))
-(junction (pt 424 1088))
-(junction (pt 360 824))
-(junction (pt 344 840))
+(connector
+	(pt 224 680)
+	(pt 328 680)
+)
+(connector
+	(pt 224 696)
+	(pt 328 696)
+	(bus)
+)
+(connector
+	(pt 224 712)
+	(pt 328 712)
+)
+(connector
+	(pt 224 728)
+	(pt 328 728)
+	(bus)
+)
+(connector
+	(pt 224 744)
+	(pt 328 744)
+)
+(connector
+	(text "F1" (rect 545 704 557 716)(font "Arial" ))
+	(pt 504 720)
+	(pt 568 720)
+)
+(connector
+	(text "INVA" (rect 592 608 619 620)(font "Arial" ))
+	(pt 504 624)
+	(pt 632 624)
+)
+(connector
+	(text "ENA" (rect 592 640 615 652)(font "Arial" ))
+	(pt 504 656)
+	(pt 632 656)
+)
+(connector
+	(text "ENB" (rect 588 672 610 684)(font "Arial" ))
+	(pt 504 688)
+	(pt 632 688)
+)
+(connector
+	(text "F0" (rect 548 688 560 700)(font "Arial" ))
+	(pt 504 704)
+	(pt 616 704)
+)
+(connector
+	(pt 224 824)
+	(pt 304 824)
+)
+(connector
+	(pt 224 840)
+	(pt 304 840)
+)
+(connector
+	(text "INVA" (rect 544 816 571 828)(font "Arial" ))
+	(pt 488 832)
+	(pt 632 832)
+)
+(connector
+	(text "ENA" (rect 544 848 567 860)(font "Arial" ))
+	(pt 488 864)
+	(pt 632 864)
+)
+(connector
+	(text "ENB" (rect 540 880 562 892)(font "Arial" ))
+	(pt 488 896)
+	(pt 632 896)
+)
+(connector
+	(text "F0" (rect 548 896 560 908)(font "Arial" ))
+	(pt 488 912)
+	(pt 616 912)
+)
+(connector
+	(text "F1" (rect 545 912 557 924)(font "Arial" ))
+	(pt 488 928)
+	(pt 608 928)
+)
+(connector
+	(text "INVA" (rect 544 1024 571 1036)(font "Arial" ))
+	(pt 488 1040)
+	(pt 632 1040)
+)
+(connector
+	(text "ENA" (rect 592 1056 615 1068)(font "Arial" ))
+	(pt 488 1072)
+	(pt 632 1072)
+)
+(connector
+	(text "ENB" (rect 588 1088 610 1100)(font "Arial" ))
+	(pt 488 1104)
+	(pt 632 1104)
+)
+(connector
+	(text "F0" (rect 548 1104 560 1116)(font "Arial" ))
+	(pt 488 1120)
+	(pt 616 1120)
+)
+(connector
+	(text "F1" (rect 569 1120 581 1132)(font "Arial" ))
+	(pt 488 1136)
+	(pt 608 1136)
+)
+(connector
+	(text "INVA" (rect 520 1232 547 1244)(font "Arial" ))
+	(pt 488 1248)
+	(pt 632 1248)
+)
+(connector
+	(text "ENA" (rect 544 1264 567 1276)(font "Arial" ))
+	(pt 488 1280)
+	(pt 632 1280)
+)
+(connector
+	(text "ENB" (rect 540 1296 562 1308)(font "Arial" ))
+	(pt 488 1312)
+	(pt 632 1312)
+)
+(connector
+	(text "F0" (rect 548 1312 560 1324)(font "Arial" ))
+	(pt 488 1328)
+	(pt 616 1328)
+)
+(connector
+	(text "F1" (rect 580 1328 592 1340)(font "Arial" ))
+	(pt 488 1344)
+	(pt 608 1344)
+)
+(connector
+	(pt 224 760)
+	(pt 552 760)
+)
+(connector
+	(pt 840 1056)
+	(pt 840 1208)
+)
+(connector
+	(pt 840 848)
+	(pt 840 1000)
+)
+(connector
+	(pt 840 640)
+	(pt 840 792)
+)
+(connector
+	(text "B[31..24]" (rect 540 1280 584 1292)(font "Arial" ))
+	(pt 488 1296)
+	(pt 632 1296)
+	(bus)
+)
+(connector
+	(text "A[7..0]" (rect 592 624 625 636)(font "Arial" ))
+	(pt 504 640)
+	(pt 632 640)
+	(bus)
+)
+(connector
+	(text "B[7..0]" (rect 588 656 621 668)(font "Arial" ))
+	(pt 504 672)
+	(pt 632 672)
+	(bus)
+)
+(connector
+	(text "A[15..8]" (rect 544 832 582 844)(font "Arial" ))
+	(pt 488 848)
+	(pt 632 848)
+	(bus)
+)
+(connector
+	(text "B[15..8]" (rect 540 864 578 876)(font "Arial" ))
+	(pt 488 880)
+	(pt 632 880)
+	(bus)
+)
+(connector
+	(text "A[23..16]" (rect 544 1040 588 1052)(font "Arial" ))
+	(pt 488 1056)
+	(pt 632 1056)
+	(bus)
+)
+(connector
+	(text "B[23..16]" (rect 540 1072 584 1084)(font "Arial" ))
+	(pt 488 1088)
+	(pt 632 1088)
+	(bus)
+)
+(connector
+	(text "A[31..24]" (rect 544 1248 588 1260)(font "Arial" ))
+	(pt 488 1264)
+	(pt 632 1264)
+	(bus)
+)
 (junction (pt 888 832))
 (junction (pt 888 1040))
 (junction (pt 888 1248))
