@@ -1,5 +1,5 @@
 Simulator report for mic1
-Tue Jan 07 11:14:12 2025
+Fri Jan 17 15:52:11 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -46,10 +46,10 @@ applicable agreement for further details.
 ; Type                        ; Value         ;
 +-----------------------------+---------------+
 ; Simulation Start Time       ; 0 ps          ;
-; Simulation End Time         ; 40.0 us       ;
+; Simulation End Time         ; 30.0 us       ;
 ; Simulation Netlist Size     ; 1163 nodes    ;
-; Simulation Coverage         ;      70.90 %  ;
-; Total Number of Transitions ; 208849        ;
+; Simulation Coverage         ;      70.99 %  ;
+; Total Number of Transitions ; 312590        ;
 ; Simulation Breakpoints      ; 0             ;
 ; Family                      ; Cyclone II    ;
 ; Device                      ; EP2C15AF484C6 ;
@@ -109,13 +109,13 @@ Please refer to fitter text-based report (*.fit.rpt) to view logical memory repo
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      70.90 % ;
+; Total coverage as a percentage                      ;      70.99 % ;
 ; Total nodes checked                                 ; 1163         ;
 ; Total output ports checked                          ; 1227         ;
-; Total output ports with complete 1/0-value coverage ; 870          ;
+; Total output ports with complete 1/0-value coverage ; 871          ;
 ; Total output ports with no 1/0-value coverage       ; 350          ;
 ; Total output ports with no 1-value coverage         ; 354          ;
-; Total output ports with no 0-value coverage         ; 353          ;
+; Total output ports with no 0-value coverage         ; 352          ;
 +-----------------------------------------------------+--------------+
 
 
@@ -450,6 +450,7 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|TOS:inst7|REGISTER32bit:inst|REGISTER8bit:inst|inst16                                 ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|TOS:inst7|REGISTER32bit:inst|REGISTER8bit:inst|inst16                             ; regout           ;
 ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|MDR:inst3|REGISTER32bit:inst1|inst4[4]~30                                             ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|MDR:inst3|REGISTER32bit:inst1|inst4[4]~30                                         ; combout          ;
 ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|MBR:inst5|REGISTER32bit:inst|REGISTER8bit:inst|inst16                                 ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|MBR:inst5|REGISTER32bit:inst|REGISTER8bit:inst|inst16                             ; regout           ;
+; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|OPC:inst8|REGISTER32bit:inst|REGISTER8bit:inst|inst16                                 ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|OPC:inst8|REGISTER32bit:inst|REGISTER8bit:inst|inst16                             ; regout           ;
 ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|MDR:inst3|REGISTER32bit:inst1|inst4[4]~31                                             ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|MDR:inst3|REGISTER32bit:inst1|inst4[4]~31                                         ; combout          ;
 ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|MDR:inst3|REGISTER32bit:inst1|inst4[4]~32                                             ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|MDR:inst3|REGISTER32bit:inst1|inst4[4]~32                                         ; combout          ;
 ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|MBR:inst5|REGISTER32bit:inst3|REGISTER8bit:inst|inst16                                ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|MBR:inst5|REGISTER32bit:inst3|REGISTER8bit:inst|inst16                            ; regout           ;
@@ -1607,7 +1608,6 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|SP:inst1|REGISTER32bit:inst|REGISTER8bit:inst|inst20                                  ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|SP:inst1|REGISTER32bit:inst|REGISTER8bit:inst|inst20                            ; regout           ;
 ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|CPP:inst6|REGISTER32bit:inst|REGISTER8bit:inst|inst20                                 ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|CPP:inst6|REGISTER32bit:inst|REGISTER8bit:inst|inst20                           ; regout           ;
 ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|CPP:inst6|REGISTER32bit:inst|REGISTER8bit:inst|inst16                                 ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|CPP:inst6|REGISTER32bit:inst|REGISTER8bit:inst|inst16                           ; regout           ;
-; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|OPC:inst8|REGISTER32bit:inst|REGISTER8bit:inst|inst16                                 ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|OPC:inst8|REGISTER32bit:inst|REGISTER8bit:inst|inst16                           ; regout           ;
 ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|CPP:inst6|REGISTER32bit:inst|REGISTER8bit:inst|inst12                                 ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|CPP:inst6|REGISTER32bit:inst|REGISTER8bit:inst|inst12                           ; regout           ;
 ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|CPP:inst6|REGISTER32bit:inst|REGISTER8bit:inst|inst8                                  ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|CPP:inst6|REGISTER32bit:inst|REGISTER8bit:inst|inst8                            ; regout           ;
 ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|CPP:inst6|REGISTER32bit:inst|REGISTER8bit:inst|inst5                                  ; |MIC1_DEF|CPU:inst|DATAPATH:inst2|BANK_REG:inst1|CPP:inst6|REGISTER32bit:inst|REGISTER8bit:inst|inst5                            ; regout           ;
@@ -1736,7 +1736,7 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Simulator
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Jan 07 11:14:12 2025
+    Info: Processing started: Fri Jan 17 15:52:11 2025
 Info: Command: quartus_sim --simulation_results_format=VWF mic1 -c mic1
 Info (324025): Using vector source file "C:/Users/Henrique/Documents/GitHub/Quartus_AOC_Projects/mic1/MIC1_recursive_sum.vwf"
 Info (328054): Inverted registers were found during simulation
@@ -1751,12 +1751,12 @@ Info (328054): Inverted registers were found during simulation
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info (310002): Simulation partitioned into 1 sub-simulations
-Info (328053): Simulation coverage is      70.90 %
-Info (328052): Number of transitions in simulation is 208849
+Info (328053): Simulation coverage is      70.99 %
+Info (328052): Number of transitions in simulation is 312590
 Info (324045): Vector file mic1.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4494 megabytes
-    Info: Processing ended: Tue Jan 07 11:14:12 2025
+    Info: Processing ended: Fri Jan 17 15:52:11 2025
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

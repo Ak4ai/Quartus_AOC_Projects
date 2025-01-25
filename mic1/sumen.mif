@@ -61,7 +61,7 @@ CONTENT BEGIN
 	0FC0  :   FE;
 	0FC1  :   CA;
 	[0FC2..0FC3]  :   00;
-	0FC4  :   04;
+	0FC4  :   05;
 	[0FC5..0FC7]  :   00;
 	0FC8  :   11;
 	[0FC9..0FFF]  :   00;
